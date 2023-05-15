@@ -1,0 +1,504 @@
+{
+  "sections": {
+    "1657285967afba02c0": {
+      "type": "slideshow",
+      "blocks": {
+        "1657285966fbda115a-0": {
+          "type": "image",
+          "settings": {
+            "color_image_overlay": "#000000",
+            "image_overlay_opacity": 40,
+            "text_color": "#ffffff",
+            "text_alignment": "center center",
+            "slide_title": "Image slide",
+            "subheading": "Tell your brand's story through images",
+            "button_style": "primary",
+            "button_label": "",
+            "button_link": "",
+            "button_style_2": "primary",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "1657285966fbda115a-1": {
+          "type": "image",
+          "settings": {
+            "color_image_overlay": "#000000",
+            "image_overlay_opacity": 40,
+            "text_color": "#ffffff",
+            "text_alignment": "center center",
+            "slide_title": "Image slide",
+            "subheading": "Tell your brand's story through images",
+            "button_style": "primary",
+            "button_label": "",
+            "button_link": "",
+            "button_style_2": "primary",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657285966fbda115a-0",
+        "1657285966fbda115a-1"
+      ],
+      "settings": {
+        "slideshow_width": "full",
+        "slideshow_height": "adapt",
+        "slideshow_mobile_height": "adapt",
+        "text_size": "large",
+        "show_buttons": true,
+        "show_dots": true,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "removeBottomMargin": false
+      }
+    },
+    "1657285989c345fe72": {
+      "type": "collection-list",
+      "blocks": {
+        "1657285989011473b7-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "almonds-prunus-dulcis"
+          }
+        },
+        "1657285989011473b7-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "aloe-vera"
+          }
+        },
+        "1657285989011473b7-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "american-hybridssambucus-canadensis"
+          }
+        },
+        "1657285989011473b7-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "apple-malus-spp"
+          }
+        },
+        "1657285989011473b7-4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "apricots"
+          }
+        },
+        "ca44420f-3c95-41e4-acda-c8ca2ec345a8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657285989011473b7-0",
+        "1657285989011473b7-1",
+        "1657285989011473b7-2",
+        "1657285989011473b7-3",
+        "1657285989011473b7-4",
+        "ca44420f-3c95-41e4-acda-c8ca2ec345a8"
+      ],
+      "custom_css": [
+        ".bg_image_with_custom_content {min-height: 0; padding-bottom: 30px;}"
+      ],
+      "settings": {
+        "section_style": "carousel",
+        "title": "",
+        "subtitle": "Top Categories",
+        "header_color_text": "#000000",
+        "button_style": "primary",
+        "button_text": "Shop All Top Categories",
+        "link": "shopify:\/\/collections",
+        "grid": 5,
+        "grid_mobile": "1",
+        "image_style": "circle",
+        "image_style_bg_overlay": "#000000",
+        "image_style_bg_overlay_opacity": 82,
+        "show_arrows": true,
+        "enable_autoplay": false,
+        "cycle_speed": 5,
+        "content_side": "left",
+        "color_image_overlay": "",
+        "image_overlay_opacity": 70
+      }
+    },
+    "16572860256a3e457c": {
+      "type": "index-icons-with-text",
+      "blocks": {
+        "16572860240fe40332-0": {
+          "type": "block",
+          "settings": {
+            "custom_icon": "star",
+            "title": "Promise 1",
+            "content": "<p>Content text<\/p>",
+            "link": ""
+          }
+        },
+        "16572860240fe40332-1": {
+          "type": "block",
+          "settings": {
+            "custom_icon": "star",
+            "title": "Promise 2",
+            "content": "<p>Content text<\/p>",
+            "link": ""
+          }
+        },
+        "16572860240fe40332-2": {
+          "type": "block",
+          "settings": {
+            "custom_icon": "star",
+            "title": "Promise 3",
+            "content": "<p>Content text<\/p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16572860240fe40332-0",
+        "16572860240fe40332-1",
+        "16572860240fe40332-2"
+      ],
+      "settings": {
+        "title": "A Social Enterprise Ecosystem",
+        "subtitle": "Your Purchases help support",
+        "icon_color": "rgba(0,0,0,0)"
+      }
+    },
+    "1657285979c825b800": {
+      "type": "featured-products",
+      "blocks": {
+        "16572859799c51da7c-0": {
+          "type": "collection",
+          "settings": {
+            "heading": "Collection",
+            "collection_handle": "",
+            "max_products_count": 10
+          }
+        },
+        "53f8bd3c-52a7-4b7f-98bd-c67b70d97d98": {
+          "type": "collection",
+          "settings": {
+            "heading": "Collection",
+            "collection_handle": "",
+            "max_products_count": 10
+          }
+        },
+        "785cfe89-b234-4266-be24-6e5051622aa2": {
+          "type": "collection",
+          "settings": {
+            "heading": "Collection",
+            "collection_handle": "",
+            "max_products_count": 10
+          }
+        }
+      },
+      "block_order": [
+        "16572859799c51da7c-0",
+        "53f8bd3c-52a7-4b7f-98bd-c67b70d97d98",
+        "785cfe89-b234-4266-be24-6e5051622aa2"
+      ],
+      "settings": {
+        "title": "",
+        "subtitle": "Top Categories",
+        "navigation_style": "large",
+        "show_vendor": false,
+        "grid": 4,
+        "grid_mobile": "1",
+        "enable_carousel": true,
+        "show_dots": true,
+        "show_arrows": true,
+        "enable_autoplay": false,
+        "cycle_speed": 5
+      }
+    },
+    "1657286047294e3104": {
+      "type": "featured-products",
+      "blocks": {
+        "1657286047a57d0f98-0": {
+          "type": "collection",
+          "settings": {
+            "heading": "Collection Heading",
+            "collection_handle": "",
+            "max_products_count": 10
+          }
+        }
+      },
+      "block_order": [
+        "1657286047a57d0f98-0"
+      ],
+      "settings": {
+        "title": "Heading",
+        "subtitle": "Subheading",
+        "navigation_style": "large",
+        "show_vendor": false,
+        "grid": 4,
+        "grid_mobile": "1",
+        "enable_carousel": true,
+        "show_dots": true,
+        "show_arrows": true,
+        "enable_autoplay": false,
+        "cycle_speed": 5
+      }
+    },
+    "1657286058c1450965": {
+      "type": "slideshow",
+      "blocks": {
+        "16572860581b16b0f9-0": {
+          "type": "image",
+          "settings": {
+            "color_image_overlay": "",
+            "image_overlay_opacity": 40,
+            "text_color": "#ffffff",
+            "text_alignment": "center center",
+            "slide_title": "Image slide",
+            "subheading": "Tell your brand's story through images",
+            "button_style": "primary",
+            "button_label": "",
+            "button_link": "",
+            "button_style_2": "primary",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "16572860581b16b0f9-0"
+      ],
+      "settings": {
+        "slideshow_width": "full",
+        "slideshow_height": "medium",
+        "slideshow_mobile_height": "adapt",
+        "text_size": "medium",
+        "show_buttons": true,
+        "show_dots": true,
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "removeBottomMargin": false
+      }
+    },
+    "1657286065cf1878aa": {
+      "type": "quotes",
+      "blocks": {
+        "165728606571ec63d1-0": {
+          "type": "quote",
+          "settings": {
+            "title": "Review heading",
+            "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        },
+        "165728606571ec63d1-1": {
+          "type": "quote",
+          "settings": {
+            "title": "Review heading",
+            "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        },
+        "165728606571ec63d1-2": {
+          "type": "quote",
+          "settings": {
+            "title": "Review heading",
+            "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        },
+        "165728606571ec63d1-3": {
+          "type": "quote",
+          "settings": {
+            "title": "Review heading",
+            "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        },
+        "165728606571ec63d1-4": {
+          "type": "quote",
+          "settings": {
+            "title": "Review heading",
+            "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        },
+        "2fe4791b-3e37-4cda-aaf5-d3dc3325c176": {
+          "type": "quote",
+          "settings": {
+            "title": "Review heading",
+            "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+            "author": "Author's name"
+          }
+        }
+      },
+      "block_order": [
+        "165728606571ec63d1-0",
+        "165728606571ec63d1-1",
+        "165728606571ec63d1-2",
+        "165728606571ec63d1-3",
+        "165728606571ec63d1-4",
+        "2fe4791b-3e37-4cda-aaf5-d3dc3325c176"
+      ],
+      "settings": {
+        "image_style": "right",
+        "title": "Testimonials",
+        "subtitle": "Subtitle",
+        "title_color": "#232323",
+        "show_dots": true,
+        "show_arrows": true,
+        "enable_autoplay": true,
+        "cycle_speed": 5
+      }
+    },
+    "165728607359737ef9": {
+      "type": "index-accordion",
+      "blocks": {
+        "165728607323e4cf38-0": {
+          "type": "block",
+          "settings": {
+            "question": "Question title",
+            "answer": "<p>Answer text<\/p>"
+          }
+        },
+        "165728607323e4cf38-1": {
+          "type": "block",
+          "settings": {
+            "question": "Question title",
+            "answer": "<p>Answer text<\/p>"
+          }
+        },
+        "165728607323e4cf38-2": {
+          "type": "block",
+          "settings": {
+            "question": "Question title",
+            "answer": "<p>Answer text<\/p>"
+          }
+        },
+        "e99e9c48-a21e-4aff-aa70-58f7f8e540be": {
+          "type": "block",
+          "settings": {
+            "question": "Question title",
+            "answer": "<p>Answer text<\/p>"
+          }
+        },
+        "7c613d42-44f7-4ad3-9a2f-64ffc4926e09": {
+          "type": "block",
+          "settings": {
+            "question": "Question title",
+            "answer": "<p>Answer text<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "165728607323e4cf38-0",
+        "165728607323e4cf38-1",
+        "165728607323e4cf38-2",
+        "e99e9c48-a21e-4aff-aa70-58f7f8e540be",
+        "7c613d42-44f7-4ad3-9a2f-64ffc4926e09"
+      ],
+      "settings": {
+        "content_side": "left",
+        "title": "Heading",
+        "subtitle": "Subtitle",
+        "text_color": "#ffffff",
+        "color_image_overlay": "#fd5b2a",
+        "image_overlay_opacity": 85
+      }
+    },
+    "165728608371b84ad5": {
+      "type": "featured-blog",
+      "settings": {
+        "title": "Blog posts",
+        "subtitle": "Subheading",
+        "blog": "",
+        "enable_carousel": false,
+        "enable_autoplay": false,
+        "cycle_speed": 5,
+        "show_dots": true,
+        "show_arrows": true,
+        "post_limit": 4,
+        "blogs_per_row": 4,
+        "blog_show_author": true,
+        "blog_show_date": true,
+        "show_view_all": false,
+        "button_text": "",
+        "button_style": "primary"
+      }
+    },
+    "165728609550d705f0": {
+      "type": "logo-bar",
+      "blocks": {
+        "16572860955765f270-0": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "16572860955765f270-1": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "16572860955765f270-2": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        },
+        "16572860955765f270-3": {
+          "type": "logo_image",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16572860955765f270-0",
+        "16572860955765f270-1",
+        "16572860955765f270-2",
+        "16572860955765f270-3"
+      ],
+      "settings": {
+        "title": "Logo list",
+        "subtitle": "",
+        "enable_carousel": true,
+        "show_dots": true,
+        "show_arrows": true,
+        "enable_autoplay": true,
+        "cycle_speed": 5,
+        "logos_count": 4,
+        "rows_count": 2,
+        "show_hover_opacity": false
+      }
+    },
+    "1657286107baf17a73": {
+      "type": "newsletter",
+      "settings": {
+        "section_bg_color": "",
+        "section_color": "",
+        "bg_image_opacity": 70,
+        "section_title": "Subscribe to our newsletter",
+        "subtitle": "",
+        "subheading": "<p>Promotions, new products and sales. Directly to your inbox.<\/p>",
+        "button_style": "primary",
+        "showFormLabels": true,
+        "removeBottomMargin": false
+      }
+    }
+  },
+  "order": [
+    "1657285967afba02c0",
+    "1657285989c345fe72",
+    "16572860256a3e457c",
+    "1657285979c825b800",
+    "1657286047294e3104",
+    "1657286058c1450965",
+    "1657286065cf1878aa",
+    "165728607359737ef9",
+    "165728608371b84ad5",
+    "165728609550d705f0",
+    "1657286107baf17a73"
+  ]
+}

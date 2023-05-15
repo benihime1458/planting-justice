@@ -1,0 +1,65 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "cc6c26ca-0560-4408-a15d-4fdb87fc8a04": {
+          "type": "text",
+          "settings": {
+            "title": "Talk about your business",
+            "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
+            "show_social_icons": true,
+            "show_locale_selector": false,
+            "show_currency_selector": false
+          }
+        },
+        "6fdc813b-1a72-482e-9f4b-95bc01cdae0d": {
+          "type": "link_list",
+          "settings": {
+            "title": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "c87ff8c9-986c-414f-b683-8405ecfe8cf9": {
+          "type": "link_list",
+          "settings": {
+            "title": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "74c8113b-d327-4497-91fc-d188b970d6a6": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Newsletter",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "cc6c26ca-0560-4408-a15d-4fdb87fc8a04",
+        "6fdc813b-1a72-482e-9f4b-95bc01cdae0d",
+        "c87ff8c9-986c-414f-b683-8405ecfe8cf9",
+        "74c8113b-d327-4497-91fc-d188b970d6a6"
+      ],
+      "settings": {
+        "bg_opacity": 20,
+        "show_copyright_note": false,
+        "show_payment_icons": false,
+        "color_footer_bg": "#000000",
+        "color_footer_headings": "#ffffff",
+        "color_footer_text": "#ebebeb",
+        "color_footer_links": "#cccccc",
+        "color_footer_links_hover": "rgba(0,0,0,0)",
+        "call_to_action_block_bg": "#222222",
+        "call_to_action_block_icon_color": "rgba(0,0,0,0)",
+        "call_to_action_block_heading_color": "#ffffff",
+        "call_to_action_block_text_color": "#cccccc"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}
