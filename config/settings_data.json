@@ -3,7 +3,7 @@
     "alternateHeader_bg_color": "#ffffff",
     "alternateHeader_text_color": "#000000",
     "logo_text_color": "#000",
-    "header_color_text": "{{ shop.brand.colors.secondary[0].foreground }}",
+    "header_color_text": "#fff",
     "header_nav_hover_link": "#8bbf63",
     "secondary_nav_color_text": "#cccccc",
     "header_megamenu_bg": "#ffffff",
