@@ -6,29 +6,13 @@
         "1657285966fbda115a-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Home_Hero.jpg",
             "color_image_overlay": "#000000",
             "image_overlay_opacity": 40,
             "text_color": "#ffffff",
             "text_alignment": "center center",
-            "slide_title": "Image slide",
-            "subheading": "Tell your brand's story through images",
-            "button_style": "primary",
-            "button_label": "",
-            "button_link": "",
-            "button_style_2": "primary",
-            "button_label_2": "",
-            "button_link_2": ""
-          }
-        },
-        "1657285966fbda115a-1": {
-          "type": "image",
-          "settings": {
-            "color_image_overlay": "#000000",
-            "image_overlay_opacity": 40,
-            "text_color": "#ffffff",
-            "text_alignment": "center center",
-            "slide_title": "Image slide",
-            "subheading": "Tell your brand's story through images",
+            "slide_title": "The Largest Selection of the Best Plants for a Great Cause.",
+            "subheading": "✅ Local, organic nursery with rare and heirloom varieties ✅ 501(c)3 non-profit benefitting local Bay area communities N Programs include food justice education, holistic re-entry from prison, permaculture landscaping team, urban farms and training centers. ✅ Living-wage jobs for formerly incarcerated people",
             "button_style": "primary",
             "button_label": "",
             "button_link": "",
@@ -39,8 +23,7 @@
         }
       },
       "block_order": [
-        "1657285966fbda115a-0",
-        "1657285966fbda115a-1"
+        "1657285966fbda115a-0"
       ],
       "settings": {
         "slideshow_width": "full",

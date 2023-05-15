@@ -42,6 +42,7 @@
       "settings": {
         "align_logo": "inline",
         "enable_overlap_header": true,
+        "enable_sticky_header": false,
         "header_fallback_image_opacity": 40,
         "enable_header_fallback_image": false,
         "show_top_line_separator": false,
