@@ -29,7 +29,7 @@
         "slideshow_width": "full",
         "slideshow_height": "adapt",
         "slideshow_mobile_height": "large",
-        "text_size": "large",
+        "text_size": "medium",
         "show_buttons": true,
         "show_dots": true,
         "autorotate": false,
