@@ -30,8 +30,8 @@
         "slideshow_height": "adapt",
         "slideshow_mobile_height": "large",
         "text_size": "medium",
-        "show_buttons": true,
-        "show_dots": true,
+        "show_buttons": false,
+        "show_dots": false,
         "autorotate": false,
         "autorotate_speed": 5,
         "removeBottomMargin": false
