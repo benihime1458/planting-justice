@@ -74,7 +74,7 @@
 
 
 {% capture header_cart_icon %}
-<div class='header_cart_info  btn btn--primary {% if show_cart_subtotal %}show_cart_subtotal{% endif %}'     id="HeaderCart" data-link-type="{{ settings.cart_type }}" data-cart-count-bubble>
+<div id="default-cart-btn" class='header_cart_info  btn btn--primary {% if show_cart_subtotal %}show_cart_subtotal{% endif %}'     id="HeaderCart" data-link-type="{{ settings.cart_type }}" data-cart-count-bubble>
   {% if show_cart_subtotal %}
   <span class='cart_total_info'>
     <span class='cart_total_label'> {{ 'sections.header.total' | t }}</span>
@@ -106,7 +106,7 @@
       {% endif %}
       {% if section.settings.logo != blank or  alternate_logo != blank %}
       {%- assign img_url = section.settings.logo | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-      <a href="{{ routes.root_url }}" class="site-header__logo-image{% if section.settings.align_logo == 'center' %} site-header__logo-image--centered{% endif %}">
+      <a href="https://plantingjustice.org/" class="site-header__logo-image{% if section.settings.align_logo == 'center' %} site-header__logo-image--centered{% endif %}">
 
 
         {% capture logo_alt %}{{ section.settings.logo.alt | default: shop.name }}{% endcapture %}
@@ -601,7 +601,8 @@
 
 
 
-      <nav class="grid__item  {% if section.settings.align_logo == 'inline' %} medium-up--ten-twelfths {% elsif section.settings.align_logo == 'left' and top_navitagion_links != blank  %}  {% else %}  medium-up--four-sixths  {% endif %}small--hide" id="AccessibleNav" role="navigation">
+      <nav style="display: flex;
+        justify-content: space-between; max-width: 100%; width: 100%;" class="grid__item  {% if section.settings.align_logo == 'inline' %} medium-up--ten-twelfths {% elsif section.settings.align_logo == 'left' and top_navitagion_links != blank  %}  {% else %}  medium-up--four-sixths  {% endif %}small--hide" id="AccessibleNav" role="navigation">
 
 
         <div class='navigation_wrapper'>
@@ -654,7 +655,36 @@
           </ul>
         </div>
 
-
+        {% comment %} Move Cart Button {% endcomment %}
+<div style="display: flex;">
+  <button  class="btn btn--primary" name="commit">
+    <a style="color: white;" target="_" href="https://plantingjustice.net/">
+      <span>Donate</span>
+    </a>
+  </button>
+  {% comment %} <div class="header_cart_info  btn btn--primary show_cart_subtotal" id="HeaderCart" data-link-type="drawer" data-cart-count-bubble="" style="
+      align-self: end;
+      justify-self: end;
+  ">
+    
+    <span class="cart_total_info">
+      <span class="cart_total_label"> Total</span>
+      <span class="cart_total_price h6">
+        
+        $0.00
+        
+      </span>
+    </span>
+    
+    
+    <a href="/cart" class="cart_icon btn btn--primary">
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-basket" class="icon icon--basket svg-inline--fa fa-shopping-basket fa-w-18" role="img" viewBox="0 0 576 512"><path fill="currentColor" d="M576 216v16c0 13.255-10.745 24-24 24h-8l-26.113 182.788C514.509 462.435 494.257 480 470.37 480H105.63c-23.887 0-44.139-17.565-47.518-41.212L32 256h-8c-13.255 0-24-10.745-24-24v-16c0-13.255 10.745-24 24-24h67.341l106.78-146.821c10.395-14.292 30.407-17.453 44.701-7.058 14.293 10.395 17.453 30.408 7.058 44.701L170.477 192h235.046L326.12 82.821c-10.395-14.292-7.234-34.306 7.059-44.701 14.291-10.395 34.306-7.235 44.701 7.058L484.659 192H552c13.255 0 24 10.745 24 24zM312 392V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24zm112 0V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24zm-224 0V280c0-13.255-10.745-24-24-24s-24 10.745-24 24v112c0 13.255 10.745 24 24 24s24-10.745 24-24z"></path></svg>
+  
+  <span class="header_cart_count  shide" data-cart-count="">0</span>
+    </a>
+  </div> {% endcomment %}
+  {{header_cart_icon}}
+</div>
       </nav>
 
       <div class="grid__item {% if section.settings.align_logo == 'inline' %}  {% elsif section.settings.align_logo == 'left' and top_navitagion_links != blank %} hide {% else %} medium-up--two-sixths {% endif %} small--three-fifths text-right site-header__icons{% if shop.customer_accounts_enabled %} site-header__icons--plus{% endif %}">

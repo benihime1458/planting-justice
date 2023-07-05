@@ -7,10 +7,33 @@
       "blocks": {
         "cc6c26ca-0560-4408-a15d-4fdb87fc8a04": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "title": "Talk about your business",
-            "text": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
-            "show_social_icons": true,
+            "title": "Visit Us 📍",
+            "text": "<p><a href=\"https:\/\/www.google.com\/maps\/dir\/\/319%20105th%20Ave%20Oakland,%20CA%2094603\" target=\"_blank\"><span style=\"text-decoration:underline\">319 105th Ave<br\/>Oakland, CA 94603<br\/><br\/><\/span><\/a>Mon-Fri: 8:30 am – 4:00 pm<br\/>Sat: 10am – 4pm<\/p>",
+            "show_social_icons": false,
+            "show_locale_selector": false,
+            "show_currency_selector": false
+          }
+        },
+        "3468b283-b72c-4a74-997b-1429139a4165": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Call Us 📞",
+            "text": "<p>(<a href=\"tel:5107566965\"><span style=\"text-decoration:underline\">510) - 756 - 6965<\/span><\/a><\/p><h5>Having trouble with our website?<\/h5><p><a href=\"https:\/\/plantingjustice.org\/website-request\/\">Submit your issue here<\/a><\/p>",
+            "show_social_icons": false,
+            "show_locale_selector": false,
+            "show_currency_selector": false
+          }
+        },
+        "55f5703b-84e4-487a-a538-8a42c8f6b25d": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Donate 🪴",
+            "text": "<p>Planting Justice is a 501(c)3 non-profit organization<strong> <\/strong>with an EIN of 27-0334905. 100% of donations are tax-exempt. <a href=\"https:\/\/plantingjustice.net\/\" target=\"_blank\" title=\"https:\/\/plantingjustice.net\/\">Donate Now<\/a>.<\/p>",
+            "show_social_icons": false,
             "show_locale_selector": false,
             "show_currency_selector": false
           }
@@ -18,48 +41,87 @@
         "6fdc813b-1a72-482e-9f4b-95bc01cdae0d": {
           "type": "link_list",
           "settings": {
-            "title": "Quick links",
-            "menu": "footer"
+            "title": "Discover",
+            "menu": "wp-footer-discover"
           }
         },
         "c87ff8c9-986c-414f-b683-8405ecfe8cf9": {
           "type": "link_list",
           "settings": {
-            "title": "Quick links",
-            "menu": "footer"
+            "title": "Get Involved",
+            "menu": "wp-footer-get-involved"
           }
         },
-        "74c8113b-d327-4497-91fc-d188b970d6a6": {
-          "type": "newsletter",
+        "2db7bdaf-5fca-4c95-900d-0789321e097e": {
+          "type": "link_list",
           "settings": {
-            "title": "Newsletter",
-            "text": ""
+            "title": "Media",
+            "menu": "wp-footer-media"
+          }
+        },
+        "59751da7-a9de-4ae5-9635-17df8ce82c0e": {
+          "type": "link_list",
+          "settings": {
+            "title": "Nursery",
+            "menu": "wp-footer-nursery"
+          }
+        },
+        "0065d6eb-a9a0-4bf6-a4b7-696d42bb297f": {
+          "type": "link_list",
+          "settings": {
+            "title": "Programs",
+            "menu": "wp-footer-programs"
           }
         }
       },
       "block_order": [
         "cc6c26ca-0560-4408-a15d-4fdb87fc8a04",
+        "3468b283-b72c-4a74-997b-1429139a4165",
+        "55f5703b-84e4-487a-a538-8a42c8f6b25d",
         "6fdc813b-1a72-482e-9f4b-95bc01cdae0d",
         "c87ff8c9-986c-414f-b683-8405ecfe8cf9",
-        "74c8113b-d327-4497-91fc-d188b970d6a6"
+        "2db7bdaf-5fca-4c95-900d-0789321e097e",
+        "59751da7-a9de-4ae5-9635-17df8ce82c0e",
+        "0065d6eb-a9a0-4bf6-a4b7-696d42bb297f"
+      ],
+      "custom_css": [
+        ".site-footer__content {display: grid; grid-template-columns: repeat(5, 250px); justify-content: center;}",
+        "@media screen and (max-width: 750px) {.site-footer__content {display: grid; grid-template-columns: repeat(2, 1fr); }}",
+        "@media screen and (max-width: 500px) {.site-footer__content {display: grid; grid-template-columns: repeat(1, 1fr); }}",
+        ".site-footer__item {width: 100%;}",
+        ".social-icons__item {background: #8bbf63; border-radius: 10px;}"
       ],
       "settings": {
         "bg_opacity": 20,
         "show_copyright_note": false,
         "show_payment_icons": false,
-        "color_footer_bg": "#000000",
-        "color_footer_headings": "#ffffff",
-        "color_footer_text": "#ebebeb",
-        "color_footer_links": "#cccccc",
+        "color_footer_bg": "rgba(0,0,0,0)",
+        "color_footer_headings": "#000000",
+        "color_footer_text": "#222222",
+        "color_footer_links": "#000000",
         "color_footer_links_hover": "rgba(0,0,0,0)",
-        "call_to_action_block_bg": "#222222",
-        "call_to_action_block_icon_color": "rgba(0,0,0,0)",
+        "call_to_action_block_bg": "#cccccc",
+        "call_to_action_block_icon_color": "#8bbf63",
         "call_to_action_block_heading_color": "#ffffff",
         "call_to_action_block_text_color": "#cccccc"
+      }
+    },
+    "9e74e738-611a-48fa-a64b-2ce9c88b24df": {
+      "type": "index-custom-section",
+      "custom_css": [
+        ".custom-footer {display: flex; justify-content: center;}",
+        ".custom-footer > div {max-width: 250px;}"
+      ],
+      "settings": {
+        "section_width": "page-width",
+        "title": "",
+        "subtitle": "",
+        "html": "<div class=\"custom-footer\">\n        <div class=\"site-footer__item\n                    \n                    site-footer__item--one-third\n                    \">\n          <div class=\"site-footer__item-inner site-footer__item-inner--text\">\n<p class=\"h5\">Visit Us 📍<\/p>\n<div class=\"site-footer__rte\n                        \">\n              <p><a href=\"https:\/\/www.google.com\/maps\/dir\/\/319%20105th%20Ave%20Oakland,%20CA%2094603\" target=\"_blank\" aria-describedby=\"a11y-new-window-external-message\" rel=\"null noopener\"><span style=\"text-decoration:underline\">319 105th Ave<br>Oakland, CA 94603<br><br><\/span><\/a>Mon-Fri: 8:30 am – 4:00 pm<br>Sat: 10am – 4pm<\/p>\n            <\/div>\n<\/div>\n        <\/div>\n        \n\n        <div class=\"site-footer__item\n                    \n                    site-footer__item--one-third\n                    \">\n          <div class=\"site-footer__item-inner site-footer__item-inner--text\">\n<p class=\"h5\">Call Us 📞<\/p>\n<div class=\"site-footer__rte\n                        \">\n              <p>(<a href=\"tel:5107566965\" aria-describedby=\"a11y-external-message\"><span style=\"text-decoration:underline\">510) - 756 - 6965<\/span><\/a><\/p>\n<h5>Having trouble with our website?<\/h5>\n<p><a href=\"https:\/\/plantingjustice.org\/website-request\/\" aria-describedby=\"a11y-external-message\">Submit your issue here<\/a><\/p>\n            <\/div>\n<\/div>\n        <\/div>\n        \n\n        <div class=\"site-footer__item\n                    \n                    site-footer__item--one-third\n                    \">\n          <div class=\"site-footer__item-inner site-footer__item-inner--text\">\n<p class=\"h5\">Donate 🪴<\/p>\n<div class=\"site-footer__rte\n                        \">\n              <p>Planting Justice is a 501(c)3 non-profit organization<strong> <\/strong>with an EIN of 27-0334905. 100% of donations are tax-exempt. <a href=\"https:\/\/plantingjustice.net\/\" target=\"_blank\" title=\"https:\/\/plantingjustice.net\/\" aria-describedby=\"a11y-new-window-external-message\" rel=\"null noopener\">Donate Now<\/a>.<\/p>\n            <\/div>\n<\/div>\n        <\/div>\n        \n<\/div>"
       }
     }
   },
   "order": [
-    "footer"
+    "footer",
+    "9e74e738-611a-48fa-a64b-2ce9c88b24df"
   ]
 }

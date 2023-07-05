@@ -70,8 +70,13 @@
         "a6857d85-dbb6-41d1-9501-c01cf5bbe11f",
         "d25a0285-4fb4-422d-b95b-ab67446120ad"
       ],
+      "custom_css": [
+        "* {border-radius: 10px;}",
+        "\/* Shop Pay Btn *\/.shopify-cleanslate > div {min-height: 48px !important; background-color: #5b005c !important;}",
+        ".breadcrumbs__link {color: #222222;}"
+      ],
       "settings": {
-        "show_breadcrumbs": false,
+        "show_breadcrumbs": true,
         "show_pick_an_option": false,
         "enable_linked_options": false,
         "enabled_mobile_sticky_btns": true,

@@ -1,7 +1,7 @@
 
 
-{% assign logos_count = section.settings.logos_count | times:1 %}
-{% assign rows_count = section.settings.rows_count | times:1  %}
+{% assign logos_count = section.settings.logos_count | times: 1 %}
+{% assign rows_count = section.settings.rows_count | times: 1 %}
 {% assign enable_carousel = section.settings.enable_carousel %}
 {% assign show_hover_opacity = section.settings.show_hover_opacity %}
 
@@ -38,17 +38,19 @@
 {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
 {% when 5 %}
 {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
+{% when 6 %}
+{%- assign grid_item_width = 'small--one-half medium-up--one-sixth' -%}
 {% endcase %}
 
 
 <section id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="logo-bar" class="">
 
-  <div class="page-width-small">
+  <div class="page-width">
     
      {% if section.settings.subtitle != blank  or  section.settings.title != blank %}
-    <div class="section-header text-center homepage_subtitle_style_{{settings.homepage_subtitle_color}} {% if section.settings.show_arrows and enable_carousel %} section-header-wrapper {% endif %}">
+    <div class="section-header text-center homepage_subtitle_style_{{ settings.homepage_subtitle_color }} {% if section.settings.show_arrows and enable_carousel %} section-header-wrapper {% endif %}">
       {% if section.settings.subtitle != blank %}
-     <span class='h5'>{{ section.settings.subtitle  }}</span>
+     <span class='h5'>{{ section.settings.subtitle }}</span>
       {% endif %}
       {% if section.settings.title != blank %}
       <h2>{{ section.settings.title | escape }}</h2>
@@ -56,10 +58,10 @@
       
       {% if section.settings.show_arrows and enable_carousel %}
         <div class='slider_custom_arrows'>
-          <a href="javascript:void(0)" id='button_prev_{{section.id}}' class='button-prev btn btn--circle-arrow' aria-label="Previous" aria-describedby="button previous">
+          <a href="javascript:void(0)" id='button_prev_{{ section.id }}' class='button-prev btn btn--circle-arrow' aria-label="Previous" aria-describedby="button previous">
             {% include 'icon' with 'tail-left' %}
           </a>
-          <a href="javascript:void(0)" id='button_next_{{section.id}}' class='button-next btn btn--circle-arrow' aria-label="Next" aria-describedby="button next">
+          <a href="javascript:void(0)" id='button_next_{{ section.id }}' class='button-next btn btn--circle-arrow' aria-label="Next" aria-describedby="button next">
             {% include 'icon' with 'tail-right' %}
           </a>
         </div>
@@ -72,7 +74,7 @@
     {% if section.blocks.size > 0 %}
 
     {% if enable_carousel %}
-    <div class='zoom-fade-animation logo-bar--slider logos_style_background hover_opacity_{{show_hover_opacity}}' data-flickity-config='{{ flickity_options }}'>
+    <div class='zoom-fade-animation logo-bar--slider logos_style_background hover_opacity_{{ show_hover_opacity }}' data-flickity-config='{{ flickity_options }}'>
       <ul class=" logo-bar {% if logos_count == 1 %} full_logo_bar{% endif %}">
         {% assign break_index = logos_count | times: rows_count %}
 		{% assign blocks_size = section.blocks.size %}
@@ -81,8 +83,8 @@
         
         {% for block in section.blocks %}   
 
-        {% assign modulo_index = forloop.index | modulo:break_index %}
-        <li class="zoom-fade-animation-element-wrapper logo-bar__item  {{grid_item_width}}" {{ block.shopify_attributes }}>
+        {% assign modulo_index = forloop.index | modulo: break_index %}
+        <li class="zoom-fade-animation-element-wrapper logo-bar__item  {{ grid_item_width }}" {{ block.shopify_attributes }}>
       
           <div class="grid-view-item">
           
@@ -93,19 +95,19 @@
               {% include 'image-style', image: block.settings.image, height: 940, wrapper_id: wrapper_id, img_id: img_id %}
               <div class="logo-bar__image-container" >
                   {% if block.settings.link != blank %}
-            <a href="{{ block.settings.link }}" class="logo-bar__link" aria-label="{{block.settings.image.alt | default: "logo" }}">
+            <a href="{{ block.settings.link }}" class="logo-bar__link" aria-label="{{ block.settings.image.alt | default: "logo" }}">
               
               {% endif %}
                   <img id=" {{ img_id }}"
                        class="logo-bar__image zoom-fade-animation-element"
-                       srcset="{%- if block.settings.image.width >= 375 -%}{{ block.settings.image | img_url: '375x' }} 375w,{%- endif -%}
-                               {%- if block.settings.image.width >= 720 -%}{{ block.settings.image | img_url: '720x' }} 750w,{%- endif -%}
-                               {%- if block.settings.image.width >= 1066 -%}{{ block.settings.image | img_url: '1066x' }} 1066w,{%- endif -%}
-                               {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
-                               {%- if block.settings.image.width >= 1780 and logos_count < 4 -%}{{ block.settings.image | img_url: '1780x' }} 1780w,{%- endif -%}
-                               {%- if block.settings.image.width >= 2000 and logos_count < 3 -%}{{ block.settings.image | img_url: '2000x' }} 2000w,{%- endif -%}
-                               {%- if block.settings.image.width >= 2800 and logos_count < 2 -%}{{ block.settings.image | img_url: '2800x' }} 2800w{%- endif -%}"
-                       src="{{ block.settings.image | img_url: '535x' }}"
+                       srcset="{%- if block.settings.image.width >= 375 -%}{{ block.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
+                               {%- if block.settings.image.width >= 720 -%}{{ block.settings.image | image_url: width: 720 }} 750w,{%- endif -%}
+                               {%- if block.settings.image.width >= 1066 -%}{{ block.settings.image | image_url: width: 1066 }} 1066w,{%- endif -%}
+                               {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                               {%- if block.settings.image.width >= 1780 and logos_count < 4 -%}{{ block.settings.image | image_url: width: 1780 }} 1780w,{%- endif -%}
+                               {%- if block.settings.image.width >= 2000 and logos_count < 3 -%}{{ block.settings.image | image_url: width: 2000 }} 2000w,{%- endif -%}
+                               {%- if block.settings.image.width >= 2800 and logos_count < 2 -%}{{ block.settings.image | image_url: width: 2800 }} 2800w{%- endif -%}"
+                       src="{{ block.settings.image | image_url: width: 535 }}"
                        sizes="(min-width: 750px) calc(100vw / {{ logos_count }}), 100vw"
                        loading="lazy"
                        width="{{ block.settings.image.width }}"
@@ -136,15 +138,15 @@
       </ul>
     </div>
     {% else %}
-    <ul class="zoom-fade-animation logo-bar grid logos_style_background hover_opacity_{{show_hover_opacity}} {% if logos_count == 1 %} full_logo_bar{% endif %}">
+    <ul class="zoom-fade-animation logo-bar grid logos_style_background hover_opacity_{{ show_hover_opacity }} {% if logos_count == 1 %} full_logo_bar{% endif %}">
       {% for block in section.blocks %}      
-      <li class="zoom-fade-animation-element-wrapper logo-bar__item grid__item grid__item--{{section.id}} {{grid_item_width}}" {{ block.shopify_attributes }}>
+      <li class="zoom-fade-animation-element-wrapper logo-bar__item grid__item grid__item--{{ section.id }} {{ grid_item_width }}" {{ block.shopify_attributes }}>
         <div class="grid-view-item">
           {% if block.settings.link != blank %}
           <a href="{{ block.settings.link }}" class="logo-bar__link">
             {% endif %}
             {% if block.settings.image != blank %}
-            {{ block.settings.image | img_url: '160x160', scale: 2 | img_tag: block.settings.image.alt, 'logo-bar__image zoom-fade-animation-element' }}
+            {{ block.settings.image | image_url: width: 320, height: 320 | img_tag: block.settings.image.alt, 'logo-bar__image zoom-fade-animation-element' }}
             {% else %}
             {{ 'logo' | placeholder_svg_tag: 'placeholder-svg zoom-fade-animation-element' }}
             {% endif %}
@@ -170,7 +172,6 @@
   "name": "t:sections.logo-bar.name",
   "class": "index-section",
   "settings": [
-
     {
       "type": "text",
       "id": "title",
@@ -198,41 +199,41 @@
         "zh-CN": "logo 列表",
         "zh-TW": "標誌清單"
       }
-    }, 
-{
+    },
+    {
       "type": "text",
       "id": "subtitle",
       "label": "t:sections.logo-bar.settings.subtitle.label"
-},
-	{
-		"type":"header",
-		"content": "t:sections.logo-bar.settings.carousel_options.label"
-	},
-	{
+    },
+    {
+      "type": "header",
+      "content": "t:sections.logo-bar.settings.carousel_options.label"
+    },
+    {
       "type": "checkbox",
       "id": "enable_carousel",
-		"label":"t:sections.logo-bar.settings.enable_carousel.label",
-		"default": true
-	},
-	{
+      "label": "t:sections.logo-bar.settings.enable_carousel.label",
+      "default": true
+    },
+    {
       "type": "checkbox",
       "id": "show_dots",
-		"label":"t:sections.logo-bar.settings.show_dots.label",
-		"default": true
-	},
- {
-         "type":"checkbox",
-         "id":"show_arrows",
-         "label":"t:sections.logo-bar.settings.show_arrows.label",
-         "default":true
-      },
-      {
-         "type":"checkbox",
-         "id":"enable_autoplay",
-         "label":"t:sections.logo-bar.settings.enable_autoplay.label",
-         "default":true
-      },
-	{
+      "label": "t:sections.logo-bar.settings.show_dots.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "label": "t:sections.logo-bar.settings.show_arrows.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_autoplay",
+      "label": "t:sections.logo-bar.settings.enable_autoplay.label",
+      "default": true
+    },
+    {
       "type": "range",
       "id": "cycle_speed",
       "min": 3,
@@ -242,31 +243,30 @@
       "label": "t:sections.logo-bar.settings.cycle_speed.label",
       "default": 5
     },
-{
-    "type": "range",
-    "id": "logos_count",
-    "min": 1,
-    "max": 4,
-    "step": 1,
-    "label": "t:sections.logo-bar.settings.logos_count.label",
-    "default": 4
-},
-{
-    "type": "range",
-    "id": "rows_count",
-    "min": 1,
-    "max": 3,
-    "step": 1,
-    "label": "t:sections.logo-bar.settings.rows_count.label",
-    "default": 2
-},
-{
-         "type":"checkbox",
-         "id":"show_hover_opacity",
-         "label":"t:sections.logo-bar.settings.show_hover_opacity.label",
-         "default":true
-      }
-
+    {
+      "type": "range",
+      "id": "logos_count",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "t:sections.logo-bar.settings.logos_count.label",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "rows_count",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "label": "t:sections.logo-bar.settings.rows_count.label",
+      "default": 2
+    },
+    {
+      "type": "checkbox",
+      "id": "show_hover_opacity",
+      "label": "t:sections.logo-bar.settings.show_hover_opacity.label",
+      "default": true
+    }
   ],
   "blocks": [
     {
@@ -290,7 +290,7 @@
   "presets": [
     {
       "name": "t:sections.logo-bar.presets.name",
- "category":"Custom Sections",
+      "category": "Custom Sections",
       "blocks": [
         {
           "type": "logo_image"

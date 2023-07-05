@@ -37,7 +37,11 @@
     "header": {
       "type": "header",
       "custom_css": [
-
+        ".site-header__icons-wrapper #default-cart-btn {display: none; background: #5b005c !important;}",
+        "#default-cart-btn {background: #5b005c; border: none;}",
+        "#default-cart-btn:hover {background-color: #a700a9;}",
+        "#default-cart-btn:hover::after {background: #a700a9; width: 100%; height: 100%; top: 0; left: 0;}",
+        "@media screen and (max-width: 750px) {.site-header__icons-wrapper #default-cart-btn {display: block; } #default-cart-btn, #default-cart-btn::after, a, a::after {border: none; border-radius: 50%; }}"
       ],
       "settings": {
         "align_logo": "inline",
@@ -46,9 +50,9 @@
         "header_fallback_image_opacity": 40,
         "enable_header_fallback_image": false,
         "show_top_line_separator": false,
-        "logo": "shopify:\/\/shop_images\/PlantingJustice-Logo-358x143.png",
+        "logo": "shopify:\/\/shop_images\/Plantin_Justice-Logo-Current-2022_6aed4d63-aab3-4f84-883a-bf08eadb6af9.png",
         "logo_max_width": 250,
-        "main_linklist": "",
+        "main_linklist": "wp-menu",
         "main_linklist_style": "none",
         "email_text": "",
         "phone_number": "",
@@ -56,7 +60,7 @@
         "show_locale_selector": false,
         "top_navigation_linklist": "",
         "categories_linklist": "",
-        "show_search_filter": true,
+        "show_search_filter": false,
         "enable_live_search": true,
         "search_popular_searches": "",
         "search_popular_products": ""

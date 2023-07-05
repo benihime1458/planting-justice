@@ -25,6 +25,9 @@
       "block_order": [
         "1657285966fbda115a-0"
       ],
+      "custom_css": [
+        ".slideshow {height: 1000px; }"
+      ],
       "settings": {
         "slideshow_width": "full",
         "slideshow_height": "adapt",
@@ -73,7 +76,7 @@
         "ca44420f-3c95-41e4-acda-c8ca2ec345a8": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "arctic-beauty-kiwi-actinidia-kolomicta"
           }
         }
       },
@@ -86,17 +89,17 @@
         "ca44420f-3c95-41e4-acda-c8ca2ec345a8"
       ],
       "custom_css": [
-        ".bg_image_with_custom_content {min-height: 0; padding-bottom: 30px;}"
+        ".bg_image_with_custom_content {min-height: 0; padding-bottom: 60px;}"
       ],
       "settings": {
         "section_style": "carousel",
-        "title": "",
+        "title": "Top Categories",
         "subtitle": "",
         "header_color_text": "#000000",
         "button_style": "primary",
         "button_text": "Shop Top Categories",
         "link": "shopify:\/\/collections",
-        "grid": 5,
+        "grid": 6,
         "grid_mobile": "1",
         "image_style": "background",
         "image_style_bg_overlay": "#000000",
@@ -157,24 +160,24 @@
         "16572859799c51da7c-0": {
           "type": "collection",
           "settings": {
-            "heading": "Collection",
-            "collection_handle": "",
+            "heading": "Blueberries",
+            "collection_handle": "blueberry",
             "max_products_count": 10
           }
         },
         "53f8bd3c-52a7-4b7f-98bd-c67b70d97d98": {
           "type": "collection",
           "settings": {
-            "heading": "Collection",
-            "collection_handle": "",
+            "heading": "Figs",
+            "collection_handle": "figs-ficus-carica",
             "max_products_count": 10
           }
         },
         "785cfe89-b234-4266-be24-6e5051622aa2": {
           "type": "collection",
           "settings": {
-            "heading": "Collection",
-            "collection_handle": "",
+            "heading": "Fruit Trees",
+            "collection_handle": "fruit-trees",
             "max_products_count": 10
           }
         }
@@ -184,104 +187,26 @@
         "53f8bd3c-52a7-4b7f-98bd-c67b70d97d98",
         "785cfe89-b234-4266-be24-6e5051622aa2"
       ],
-      "settings": {
-        "title": "",
-        "subtitle": "Top Categories",
-        "navigation_style": "large",
-        "show_vendor": false,
-        "grid": 4,
-        "grid_mobile": "1",
-        "enable_carousel": true,
-        "show_dots": true,
-        "show_arrows": true,
-        "enable_autoplay": false,
-        "cycle_speed": 5
-      }
-    },
-    "1657286047294e3104": {
-      "type": "featured-products",
-      "blocks": {
-        "1657286047a57d0f98-0": {
-          "type": "collection",
-          "settings": {
-            "heading": "Collection Heading",
-            "collection_handle": "",
-            "max_products_count": 10
-          }
-        }
-      },
-      "block_order": [
-        "1657286047a57d0f98-0"
+      "custom_css": [
+        "h2 {padding-bottom: 17.5px;}"
       ],
       "settings": {
-        "title": "Heading",
-        "subtitle": "Subheading",
-        "navigation_style": "large",
+        "title": "Our Best Sellers",
+        "subtitle": "",
+        "navigation_style": "normal",
         "show_vendor": false,
         "grid": 4,
-        "grid_mobile": "1",
+        "grid_mobile": "2",
         "enable_carousel": true,
-        "show_dots": true,
-        "show_arrows": true,
+        "show_dots": false,
+        "show_arrows": false,
         "enable_autoplay": false,
         "cycle_speed": 5
-      }
-    },
-    "1657286058c1450965": {
-      "type": "slideshow",
-      "blocks": {
-        "16572860581b16b0f9-0": {
-          "type": "image",
-          "settings": {
-            "color_image_overlay": "",
-            "image_overlay_opacity": 40,
-            "text_color": "#ffffff",
-            "text_alignment": "center center",
-            "slide_title": "Image slide",
-            "subheading": "<p>Tell your brand's story through images<\/p>",
-            "button_style": "primary",
-            "button_label": "",
-            "button_link": "",
-            "button_style_2": "primary",
-            "button_label_2": "",
-            "button_link_2": ""
-          }
-        }
-      },
-      "block_order": [
-        "16572860581b16b0f9-0"
-      ],
-      "settings": {
-        "slideshow_width": "full",
-        "slideshow_height": "medium",
-        "slideshow_mobile_height": "adapt",
-        "text_size": "medium",
-        "show_buttons": true,
-        "show_dots": true,
-        "autorotate": false,
-        "autorotate_speed": 5,
-        "removeBottomMargin": false
       }
     },
     "1657286065cf1878aa": {
       "type": "quotes",
       "blocks": {
-        "165728606571ec63d1-0": {
-          "type": "quote",
-          "settings": {
-            "title": "Review heading",
-            "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name"
-          }
-        },
-        "165728606571ec63d1-1": {
-          "type": "quote",
-          "settings": {
-            "title": "Review heading",
-            "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name"
-          }
-        },
         "165728606571ec63d1-2": {
           "type": "quote",
           "settings": {
@@ -289,111 +214,100 @@
             "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
             "author": "Author's name"
           }
-        },
-        "165728606571ec63d1-3": {
-          "type": "quote",
-          "settings": {
-            "title": "Review heading",
-            "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name"
-          }
-        },
-        "165728606571ec63d1-4": {
-          "type": "quote",
-          "settings": {
-            "title": "Review heading",
-            "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name"
-          }
-        },
-        "2fe4791b-3e37-4cda-aaf5-d3dc3325c176": {
-          "type": "quote",
-          "settings": {
-            "title": "Review heading",
-            "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
-            "author": "Author's name"
-          }
         }
       },
       "block_order": [
-        "165728606571ec63d1-0",
-        "165728606571ec63d1-1",
-        "165728606571ec63d1-2",
-        "165728606571ec63d1-3",
-        "165728606571ec63d1-4",
-        "2fe4791b-3e37-4cda-aaf5-d3dc3325c176"
+        "165728606571ec63d1-2"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "image_style": "right",
         "title": "Testimonials",
-        "subtitle": "Subtitle",
+        "subtitle": "",
         "title_color": "#232323",
         "show_dots": true,
-        "show_arrows": true,
+        "show_arrows": false,
         "enable_autoplay": true,
         "cycle_speed": 5
       }
     },
-    "165728607359737ef9": {
-      "type": "index-accordion",
+    "165728609550d705f0": {
+      "type": "logo-bar",
       "blocks": {
-        "165728607323e4cf38-0": {
-          "type": "block",
+        "16572860955765f270-0": {
+          "type": "logo_image",
           "settings": {
-            "question": "Question title",
-            "answer": "<p>Answer text<\/p>"
+            "image": "shopify:\/\/shop_images\/1.-NYT.png",
+            "link": ""
           }
         },
-        "165728607323e4cf38-1": {
-          "type": "block",
+        "16572860955765f270-1": {
+          "type": "logo_image",
           "settings": {
-            "question": "Question title",
-            "answer": "<p>Answer text<\/p>"
+            "image": "shopify:\/\/shop_images\/2.-daily-kos.png",
+            "link": ""
           }
         },
-        "165728607323e4cf38-2": {
-          "type": "block",
+        "16572860955765f270-2": {
+          "type": "logo_image",
           "settings": {
-            "question": "Question title",
-            "answer": "<p>Answer text<\/p>"
+            "image": "shopify:\/\/shop_images\/3.-npr.png",
+            "link": ""
           }
         },
-        "e99e9c48-a21e-4aff-aa70-58f7f8e540be": {
-          "type": "block",
+        "16572860955765f270-3": {
+          "type": "logo_image",
           "settings": {
-            "question": "Question title",
-            "answer": "<p>Answer text<\/p>"
+            "image": "shopify:\/\/shop_images\/4.-Ecology-Center.png",
+            "link": ""
           }
         },
-        "7c613d42-44f7-4ad3-9a2f-64ffc4926e09": {
-          "type": "block",
+        "be4fe862-4060-46cb-ac1e-9bc8b504f78f": {
+          "type": "logo_image",
           "settings": {
-            "question": "Question title",
-            "answer": "<p>Answer text<\/p>"
+            "image": "shopify:\/\/shop_images\/5.-upworthy.png",
+            "link": ""
+          }
+        },
+        "9b788f81-f801-4868-b5a5-30a145eb338f": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6.-eastbayexpress.png",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "165728607323e4cf38-0",
-        "165728607323e4cf38-1",
-        "165728607323e4cf38-2",
-        "e99e9c48-a21e-4aff-aa70-58f7f8e540be",
-        "7c613d42-44f7-4ad3-9a2f-64ffc4926e09"
+        "16572860955765f270-0",
+        "16572860955765f270-1",
+        "16572860955765f270-2",
+        "16572860955765f270-3",
+        "be4fe862-4060-46cb-ac1e-9bc8b504f78f",
+        "9b788f81-f801-4868-b5a5-30a145eb338f"
+      ],
+      "custom_css": [
+        "img {height: auto; max-width: 100%; margin: auto;}"
       ],
       "settings": {
-        "content_side": "left",
-        "title": "Heading",
-        "subtitle": "Subtitle",
-        "text_color": "#ffffff",
-        "color_image_overlay": "#fd5b2a",
-        "image_overlay_opacity": 85
+        "title": "Look Who Featured Us",
+        "subtitle": "",
+        "enable_carousel": true,
+        "show_dots": true,
+        "show_arrows": false,
+        "enable_autoplay": true,
+        "cycle_speed": 5,
+        "logos_count": 6,
+        "rows_count": 1,
+        "show_hover_opacity": false
       }
     },
     "165728608371b84ad5": {
       "type": "featured-blog",
       "settings": {
-        "title": "Blog posts",
-        "subtitle": "Subheading",
+        "title": "Latest Stories and News",
+        "subtitle": "",
         "blog": "",
         "enable_carousel": false,
         "enable_autoplay": false,
@@ -407,53 +321,6 @@
         "show_view_all": false,
         "button_text": "",
         "button_style": "primary"
-      }
-    },
-    "165728609550d705f0": {
-      "type": "logo-bar",
-      "blocks": {
-        "16572860955765f270-0": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "16572860955765f270-1": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "16572860955765f270-2": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "16572860955765f270-3": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "16572860955765f270-0",
-        "16572860955765f270-1",
-        "16572860955765f270-2",
-        "16572860955765f270-3"
-      ],
-      "settings": {
-        "title": "Logo list",
-        "subtitle": "",
-        "enable_carousel": true,
-        "show_dots": true,
-        "show_arrows": true,
-        "enable_autoplay": true,
-        "cycle_speed": 5,
-        "logos_count": 4,
-        "rows_count": 2,
-        "show_hover_opacity": false
       }
     },
     "1657286107baf17a73": {
@@ -476,12 +343,9 @@
     "1657285989c345fe72",
     "16572860256a3e457c",
     "1657285979c825b800",
-    "1657286047294e3104",
-    "1657286058c1450965",
     "1657286065cf1878aa",
-    "165728607359737ef9",
-    "165728608371b84ad5",
     "165728609550d705f0",
+    "165728608371b84ad5",
     "1657286107baf17a73"
   ]
 }

@@ -2,12 +2,18 @@
   "sections": {
     "main": {
       "type": "list-collections-template",
+      "custom_css": [
+        ".collection-grid-item {padding: 0;}",
+        ".collection-grid-item__image-wrapper img {max-width: 100% !important; object-fit: cover; border-radius: 20px 20px 0 0; height: 100%;}",
+        ".collections-grid-item__info {padding: 30px;}",
+        "@media screen and (max-width: 750px) {.collection-grid-item__image-wrapper img {max-height: 200px !important; }}"
+      ],
       "settings": {
         "image_overlay_color": "#000000",
         "image_overlay_opacity": 40,
         "title": "",
-        "show_breadcrumbs": true,
-        "collection_grid_display": "full_image",
+        "show_breadcrumbs": false,
+        "collection_grid_display": "fixed_height_images",
         "collection_image_height": 300,
         "display_type": "all",
         "sort": "alphabetical",

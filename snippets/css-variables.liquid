@@ -18,19 +18,19 @@
 
 	--header_megamenu_bg: {{ settings.header_megamenu_bg }};
 	--header_nav_2_bg: {{ settings.header_nav_2_bg }};
-	--header_nav_2_color_text: {{ settings.header_nav_2_color_text}};
+	--header_nav_2_color_text: {{ settings.header_nav_2_color_text }};
 	--search_bar_bg: {{ settings.search_bar_bg }};
 
 	--header_search_categories_bg: {{ settings.header_search_categories_bg }};
 	--header_search_categories_color_text: {{ settings.header_search_categories_color_text }};
 	--alternateHeader_bg_color: {{ settings.alternateHeader_bg_color }};
-	--alternateHeader_text_color: {{ settings.alternateHeader_text_color}};
+	--alternateHeader_text_color: {{ settings.alternateHeader_text_color }};
     --logo_text_color: {{ settings.logo_text_color }};
     --header_color_text: {{ settings.header_color_text }};
 	--header_nav_hover_link: {{ settings.header_nav_hover_link }};
 
     --secondary_nav_color_text: {{ settings.secondary_nav_color_text }};
-    --secondary_nav_color_lighter: {{ settings.secondary_nav_color_text  | color_modify: 'alpha', 0.3 }};
+    --secondary_nav_color_lighter: {{ settings.secondary_nav_color_text | color_modify: 'alpha', 0.3 }};
 
 
 	--white-color: {{ "#ffffff" }};
@@ -56,12 +56,12 @@
     --color-text-field-text-rgb: {{ settings.color_text_field_text | color_to_rgb | remove: 'rgb(' | remove: 'rgba(' | remove: ')' | remove: ', 0.0' }};
 
     --color-btn-primary: {{ settings.color_button }};
-    --color-btn-primary-darker: {{ settings.color_button | color_darken: 10   | color_saturate : 100  }};
+    --color-btn-primary-darker: {{ settings.color_button | color_darken: 10 | color_saturate : 100 }};
     --color-btn-primary-text: {{ settings.color_button_text }};
 	
 	--color-btn-secondary: {{ settings.color_secondary_button }};
 
-	--color--btn-white-darker: {{ '#ffffff'| color_darken: 10    }};
+	--color--btn-white-darker: {{ '#ffffff' | color_darken: 10 }};
 
 
     --color-blankstate: {{ settings.color_body_text | color_modify: 'alpha', 0.35 }};
@@ -102,7 +102,7 @@
 
     --color-border: {{ settings.color_borders }};
     --color-border-form: {{ settings.color_text_field_border }};
-    --color-border-form-darker: {{ settings.color_text_field_border | color_darken: 10}};
+    --color-border-form-darker: {{ settings.color_text_field_border | color_darken: 10 }};
 
     --svg-select-icon: url({{ "ico-select.svg" | asset_url }});
  	--svg-select-white-icon: url({{ "ico-white-select.svg" | asset_url }});
@@ -138,15 +138,15 @@
     --heading5-letter-spacing: {{ settings.type_header_letterSpacing | times: 0.25 | append: 'px' }};
     --heading6-letter-spacing:  {{ settings.type_header_letterSpacing | times: 0.25 | append: 'px' }};
 
-	--heading-line-height : {{ settings.type_header_lineHeight | times: 1  }};
+	--heading-line-height : {{ settings.type_header_lineHeight | times: 1 }};
 
     --font-size-base: {{ settings.type_base_size }};
 
     --font-h1-desktop: {{ settings.type_header_base_size | times: 2 | floor }};
     --font-h1-mobile: {{ settings.type_header_base_size | times: 1.4 | floor }};
 
-    --font-h2-desktop: {{ settings.type_header_base_size | times: 1.3 | floor   }};
-    --font-h2-mobile: {{ settings.type_header_base_size | times: 1 | floor   }};
+    --font-h2-desktop: {{ settings.type_header_base_size | times: 1.3 | floor }};
+    --font-h2-mobile: {{ settings.type_header_base_size | times: 1 | floor }};
 
     --font-h3-desktop: {{ settings.type_header_base_size | times: 1 | floor | at_least: 18 }};
     --font-h3-mobile: {{ settings.type_header_base_size | times: 0.65 | floor | at_least: 16 }};
@@ -154,11 +154,11 @@
     --font-h4-desktop: {{ settings.type_header_base_size | times: 0.55 | floor | at_least: 16 }};
     --font-h4-mobile: {{ settings.type_header_base_size | times: 0.55 | times: 0.9 | floor | at_least: 15 }};
 
-    --font-h5-desktop: {{ settings.type_header_base_size | times: 0.45 | floor | at_least: 14  }};
-    --font-h5-mobile: {{ settings.type_header_base_size | times: 0.45 |  floor  | at_least: 13 }};
+    --font-h5-desktop: {{ settings.type_header_base_size | times: 0.45 | floor | at_least: 14 }};
+    --font-h5-mobile: {{ settings.type_header_base_size | times: 0.45 | floor | at_least: 13 }};
 
-    --font-h6-desktop: {{ settings.type_header_base_size | times: 0.4 | floor  | at_least: 12  }};
-    --font-h6-mobile: {{ settings.type_header_base_size | times: 0.4 | times: 0.9 | floor | at_least: 11  }};
+    --font-h6-desktop: {{ settings.type_header_base_size | times: 0.4 | floor | at_least: 12 }};
+    --font-h6-mobile: {{ settings.type_header_base_size | times: 0.4 | times: 0.9 | floor | at_least: 11 }};
 
     --font-mega-title-large-desktop: {{ settings.type_header_base_size | times: 2.5 | floor }};
 
