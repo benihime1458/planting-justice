@@ -181,7 +181,7 @@
 
 {% capture search_bar %}
 
- <div class="search-bar__interior {%  unless show_search_filter %} without_search_filter {%  endunless %}">
+ {% comment %} <div class="search-bar__interior {%  unless show_search_filter %} without_search_filter {%  endunless %}">
             
             <button type="button"
                     class="header-search-button"
@@ -207,7 +207,7 @@
                     {%- for product_type in shop.types -%}
                     {%- if product_type != blank -%}
                     <li><a data-value='{{  product_type }}' href="javascript:void(0)">{{ product_type | escape}}</a></li>
-                    {%- endif -%}
+                    {%- endif -%}`
                     {%- endfor -%}
                   </ul>
                 </div>
@@ -325,7 +325,7 @@
               {%endif%}
 
             </div>
-          </div>
+          </div> {% endcomment %}
 
 {% endcapture %}
 
