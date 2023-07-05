@@ -59,40 +59,40 @@
   </form>
 
   <div class="category-filters-area">
-    {% assign current_url = collection.url %}
+    
 
 
-    {% assign firstLevelMenu = linklists[section.settings.collection_linklist]%}
-    {% if firstLevelMenu.links != blank  %}
+    {% assign firstLevelMenu = linklists[section.settings.collection_linklist] %}
+    {% if firstLevelMenu.links != blank %}
     <div class="category-filters-area-section">
       <span class="category-filters-section-title h4 {% if visible_filters %} active {% endif %}">
-        <span> {{firstLevelMenu.title}}</span>
+        <span> {{ firstLevelMenu.title }}</span>
         {% include 'icon' with 'angle-down' %}
 
       </span>
-      <div class="category-filters-area-list sidebar_advanced_menu {% if visible_filters %} active {% endif %}" id="accordion_collection_{{sidebar_index}}" role="tablist" area_multiselectable="true">
+      <div class="category-filters-area-list sidebar_advanced_menu {% if visible_filters %} active {% endif %}" id="accordion_collection_{{ sidebar_index }}" role="tablist" area_multiselectable="true">
         {% for link in firstLevelMenu.links %}
 
         {%- assign child_id = forloop.index -%}
         {% if link.links.size > 0 %}
         <div class="panel-heading collapse"
             
-             data-collapse-panel='{{link.title | escape | handle}}_{{child_id}}_collection_{{sidebar_index}}'>
-          {{link.title | escape }}
+             data-collapse-panel='{{ link.title | escape | handle }}_{{ child_id }}_collection_{{ sidebar_index }}'>
+          {{ link.title | escape }}
         </div>
-        <div class="panel-collapse" role="tab" id="{{link.title | escape | handle}}_{{child_id}}_collection_{{sidebar_index}}" style='height:0px;'>
+        <div class="panel-collapse" role="tab" id="{{ link.title | escape | handle }}_{{ child_id }}_collection_{{ sidebar_index }}" style='height:0px;'>
           <ul class="panel-group-nav-list second-level-nav-list">
             {% for child_link in link.links %}
             {% if child_link.links.size > 0 %}
             <li>
                <div class="panel-heading collapse"
-             data-collapse-panel='{{child_link.title | escape | handle}}_{{child_id}}_collection_{{sidebar_index}}'>
-          {{link.title | escape }}
+             data-collapse-panel='{{ child_link.title | escape | handle }}_{{ child_id }}_collection_{{ sidebar_index }}'>
+          {{ link.title | escape }}
         </div>
-                 <div class="panel-collapse"  id="{{child_link.title | escape | handle}}_{{child_id}}_collection_{{sidebar_index}}" >
+                 <div class="panel-collapse"  id="{{ child_link.title | escape | handle }}_{{ child_id }}_collection_{{ sidebar_index }}" >
               <ul class="panel-group-nav-list third-level-nav-list">
                 {% for grand_child_link in child_link.links %}
-                <li><a href="{{grand_child_link.url}}" data-parent="#{{child_link.handle | escape | handle}}_collection_{{sidebar_index}}">{{grand_child_link.title | escape }}</a></li>
+                <li><a href="{{ grand_child_link.url }}" data-parent="#{{ child_link.handle | escape | handle }}_collection_{{ sidebar_index }}">{{ grand_child_link.title | escape }}</a></li>
                 {% endfor %}
               </ul>
             </div>
@@ -100,7 +100,7 @@
          
             {% else %}
             <li>
-              <a href="{{child_link.url}}" class="dropdown-menu-links">{{child_link.title | escape }}</a>
+              <a href="{{ child_link.url }}" class="dropdown-menu-links">{{ child_link.title | escape }}</a>
             </li>
             {% endif %}
             {% endfor %}
@@ -137,10 +137,10 @@
        <input id='sidebar_sort_by' type="hidden" name="sort_by" value="{{ sort_by }}">
       
       {%- for filter in collection.filters -%}
-      {% assign downcase_filter_label = filter.label  | downcase %}
+      {% assign downcase_filter_label = filter.label | downcase %}
 
 
-      {%- if color_label contains downcase_filter_label  -%}
+      {%- if color_label contains downcase_filter_label -%}
       {%- assign show_color_swatch = true -%}
       {%- else -%}
       {%- assign show_color_swatch = false -%}
@@ -149,7 +149,7 @@
 
       <div class="category-filters-area-section">
         <span class="category-filters-section-title h4 {% if visible_filters %} active {% endif %}">
-          <span>{{  filter.label }}</span>
+          <span>{{ filter.label }}</span>
           {% include 'icon' with 'angle-down' %}
         </span>
 
@@ -187,7 +187,7 @@
                    ></label> 
             {% endif %}
 
-            <a href='javascript: void(0);' class='check_filter_value'>{{filter_value.label }} ({{ filter_value.count }}) </a>
+            <a href='javascript: void(0);' class='check_filter_value'>{{ filter_value.label }} ({{ filter_value.count }}) </a>
           </li>
           {%- endfor -%}
 
@@ -198,7 +198,7 @@
 
 
 
-            {%- assign min_value = filter.min_value.value | default: 0.0 | divided_by: 100.0 -%}
+            
             {%- assign max_value = filter.max_value.value | default: filter.range_max | divided_by: 100.0 -%}
             {%- assign range_max = filter.range_max | divided_by: 100.0 | ceil -%}
 
@@ -208,16 +208,16 @@
             <div class="filter-group-display__price-range">
               <div class="filter-group-display__price-range-from filter-group-display__price-range-block">
 
-                <label for="Filter-{{ filter.min_value.param_name  }}-{{ forloop.index }}" class="visually-hidden">{{ 'collections.sidebar.label_min_price' | t }}</label>
+                <label for="Filter-{{ filter.min_value.param_name }}-{{ forloop.index }}" class="visually-hidden">{{ 'collections.sidebar.label_min_price' | t }}</label>
                
                 <input name="{{ filter.min_value.param_name }}"
                        class='filter-group-display__price-range-input'
-                       id="Filter-{{ filter.min_value.param_name  }}-{{ forloop.index }}"
+                       id="Filter-{{ filter.min_value.param_name }}-{{ forloop.index }}"
                        {% if filter.min_value.value -%}
                        value="{{ filter.min_value.value | money_without_trailing_zeros | strip_html }}"
                        {%- endif %}
                 	  type="text"
-                       placeholder="{{ 0 | money_without_trailing_zeros | strip_html}}"
+                       placeholder="{{ 0 | money_without_trailing_zeros | strip_html }}"
                        min="0"
                        max="{{ max_value | ceil }}"
                        >
@@ -225,18 +225,18 @@
               <div class='filter-group-display__price-divider'>-</div>
               <div class="filter-group-display__price-range-to filter-group-display__price-range-block">
 
-                <label for="Filter-{{ filter.max_value.param_name  }}-{{ forloop.index }}" class="visually-hidden">{{ 'collections.sidebar.label_max_price' | t }}</label>
+                <label for="Filter-{{ filter.max_value.param_name }}-{{ forloop.index }}" class="visually-hidden">{{ 'collections.sidebar.label_max_price' | t }}</label>
 
                 <input name="{{ filter.max_value.param_name }}"
                        class='filter-group-display__price-range-input'
-                       id="Filter-{{ filter.max_value.param_name  }}-{{ forloop.index }}"
+                       id="Filter-{{ filter.max_value.param_name }}-{{ forloop.index }}"
                        {% if filter.max_value.value -%}
-                       value="{{  filter.max_value.value | money_without_trailing_zeros   | strip_html }}"
+                       value="{{ filter.max_value.value | money_without_trailing_zeros | strip_html }}"
                        {%- endif %}
                  	 type="text"
-                       placeholder="{{  max_value | ceil | times:100 | money_without_trailing_zeros | strip_html }}"
+                       placeholder="{{ max_value | ceil | times: 100 | money_without_trailing_zeros | strip_html }}"
                        min="0"
-                       max="{{ range_max  }}"
+                       max="{{ range_max }}"
                        >
               </div>
             </div>
@@ -244,25 +244,25 @@
             <div class='price_range_container'>     
 
 
-              <label for="FilterRange-{{ filter.min_value.param_name  }}-{{ forloop.index }}" class="visually-hidden">{{ 'collections.sidebar.label_min_price' | t }}</label>
+              <label for="FilterRange-{{ filter.min_value.param_name }}-{{ forloop.index }}" class="visually-hidden">{{ 'collections.sidebar.label_min_price' | t }}</label>
 
               <input  class="price_range"
-                     id="FilterRange-{{ filter.min_value.param_name  }}-{{ forloop.index }}"
+                     id="FilterRange-{{ filter.min_value.param_name }}-{{ forloop.index }}"
                      type="range" 
                      data-name="{{ filter.min_value.param_name }}"
                      value="{{ filter.min_value.value | times: 1 | divided_by: 100 }}"
                      min="0"
-                     max="{{ filter.range_max | divided_by: 100  }}"   step="1" >
+                     max="{{ filter.range_max | divided_by: 100 }}"   step="1" >
 
               <input  class="price_range"
                      type="range" 
-                     id="FilterRange-{{ filter.max_value.param_name  }}-{{ forloop.index }}"
+                     id="FilterRange-{{ filter.max_value.param_name }}-{{ forloop.index }}"
                      data-name="{{ filter.max_value.param_name }}"
                      min="0"
-                     max="{{ filter.range_max  | times: 1  | divided_by: 100 }}"   step="1"
-                     value="{{ filter.max_value.value | times: 1   | divided_by: 100 }}"
+                     max="{{ filter.range_max | times: 1 | divided_by: 100 }}"   step="1"
+                     value="{{ filter.max_value.value | times: 1 | divided_by: 100 }}"
                      >
-              <label for="FilterRange-{{ filter.max_value.param_name  }}-{{ forloop.index }}" class="visually-hidden">{{ 'collections.sidebar.label_max_price' | t }}</label>
+              <label for="FilterRange-{{ filter.max_value.param_name }}-{{ forloop.index }}" class="visually-hidden">{{ 'collections.sidebar.label_max_price' | t }}</label>
 
             </div>
 
@@ -271,8 +271,8 @@
           {%- endcase -%}         
         </ul>
 
-        <a href="javascript: void(0);" class="show_more_options" data-default-text="{{ 'collections.sidebar.show_all_html' | t: category:  filter.label  }}">
-          <span>{{ 'collections.sidebar.show_all_html' | t:  category:  filter.label }}</span>
+        <a href="javascript: void(0);" class="show_more_options" data-default-text="{{ 'collections.sidebar.show_all_html' | t: category: filter.label }}">
+          <span>{{ 'collections.sidebar.show_all_html' | t: category: filter.label }}</span>
         </a>
       </div>
 
@@ -291,10 +291,10 @@
     {% for group in group_array %}
     {% if cat_array contains group %}
     {% capture array %}
-    {% unless array == blank or array == "" %}{{ array }},{% endunless %}{{group | strip}}
-    {% endcapture%}
+    {% unless array == blank or array == "" %}{{ array }},{% endunless %}{{ group | strip }}
+    {% endcapture %}
     {% endif %}
-    {% endfor%}
+    {% endfor %}
     {% assign cat_array = array %}
 
     {% if group_array == blank %}
@@ -310,7 +310,7 @@
 
     {% unless tags_present == false %}
 
-    {%- if color_label contains cat_item  -%}
+    {%- if color_label contains cat_item -%}
     {%- assign show_color_swatch = true -%}
     {%- else -%}
     {%- assign show_color_swatch = false -%}
@@ -339,7 +339,7 @@
         <li class="advanced-filter active-filter {% if show_color_swatch %} colored_filter_link {% endif %}" data-group="{{ cat_item }}" data-handle="{{ tag | handle }}"> 
           {% if show_color_swatch %}
           {% assign tag_color_value = tag | remove_first: cat_item | remove_first: '_' %}
-          <div class="tooltip_filters">{{tag | remove_first: cat_item | remove_first: '_' }}</div>
+          <div class="tooltip_filters">{{ tag | remove_first: cat_item | remove_first: '_' }}</div>
           <label 
                  style="{% render 'color_swatch_customization', default_value: tag_color_value %}"
                  ></label> {% endif %} {{ tag | remove_first: cat_item | remove_first: '_' | link_to_remove_tag: tag }}</li>
@@ -348,7 +348,7 @@
           {% if show_color_swatch %}
           {% assign tag_color_value = tag | remove_first: cat_item | remove_first: '_' %}
           
-          <div class="tooltip_filters">{{tag | remove_first: cat_item | remove_first: '_' }}</div> 
+          <div class="tooltip_filters">{{ tag | remove_first: cat_item | remove_first: '_' }}</div> 
           <label 
                  style="{% render 'color_swatch_customization', default_value: tag_color_value %}"></label> {% endif %} {{ tag | remove_first: cat_item | remove_first: '_' | link_to_add_tag: tag }}</li>
         {% endif %}
@@ -357,13 +357,13 @@
         {% endfor %}
         {% endfor %}
       </ul><!--  if linklists[linklist_title].links != ''  -->
-      <a href="javascript: void(0);" class="show_more_options" data-default-text="{{ 'collections.sidebar.show_all_html' | t: category: cat_item  }}">
-        <span>{{ 'collections.sidebar.show_all_html' | t: category: cat_item  }}</span>
+      <a href="javascript: void(0);" class="show_more_options" data-default-text="{{ 'collections.sidebar.show_all_html' | t: category: cat_item }}">
+        <span>{{ 'collections.sidebar.show_all_html' | t: category: cat_item }}</span>
       </a>
     </div>
     {% endif %}
 
-    {% unless cat_item == '' or linklists[linklist_title].links.size > 0  %}
+    {% unless cat_item == '' or linklists[linklist_title].links.size > 0 %}
     <div class="category-filters-area-section">
       <span class="category-filters-section-title h4 {% if visible_filters %} active {% endif %}">
         <span>{{ cat_item }}</span>
@@ -381,7 +381,7 @@
         <li class="advanced-filter active-filter {% if show_color_swatch %} colored_filter_link {% endif %}" data-group="{{ cat_item }}" data-handle="{{ tag | handle }}">
           {% if show_color_swatch %}
           {% assign tag_color_value = tag | remove_first: cat_item | remove_first: '_' %}
-          <div class="tooltip_filters">{{tag | remove_first: cat_item | remove_first: '_' }}</div> 
+          <div class="tooltip_filters">{{ tag | remove_first: cat_item | remove_first: '_' }}</div> 
           <label 
                  style="{% render 'color_swatch_customization', default_value: tag_color_value %}"
                  ></label> {% endif %}
@@ -391,7 +391,7 @@
         <li class="advanced-filter {% if show_color_swatch %} colored_filter_link {% endif %}" data-group="{{ cat_item }}" data-handle="{{ tag | handle }}">
           {% if show_color_swatch %}
           {% assign tag_color_value = tag | remove_first: cat_item | remove_first: '_' %}
-          <div class="tooltip_filters">{{tag | remove_first: cat_item | remove_first: '_' }}</div> 
+          <div class="tooltip_filters">{{ tag | remove_first: cat_item | remove_first: '_' }}</div> 
           <label 
                  style="{% render 'color_swatch_customization', default_value: tag_color_value %}"></label> {% endif %} 
           {{ tag | remove_first: cat_item | remove_first: '_' | link_to_add_tag: tag }}
@@ -400,8 +400,8 @@
         {% endif %}
         {% endfor %}
       </ul>
-      <a href="javascript: void(0);" class="show_more_options" data-default-text="{{ 'collections.sidebar.show_all_html' | t: category: cat_item  }}">
-        <span>{{ 'collections.sidebar.show_all_html' | t:  category: cat_item }}</span>
+      <a href="javascript: void(0);" class="show_more_options" data-default-text="{{ 'collections.sidebar.show_all_html' | t: category: cat_item }}">
+        <span>{{ 'collections.sidebar.show_all_html' | t: category: cat_item }}</span>
       </a>
     </div>
     {% endunless %}
@@ -456,16 +456,16 @@
       </div>
       {% endif %}
 
-      {% if section.settings.show_collection_sidebar_sale and section.settings.sidebar_collection_sale_collection != blank  %}
+      {% if section.settings.show_collection_sidebar_sale and section.settings.sidebar_collection_sale_collection != blank %}
       <div class="category-filters-area-section products-widget ">
         <span class="category-filters-section-title h4 {% if visible_filters %} active {% endif %}">
-          <span>{{section.settings.collection_sidebar_sale_title}}</span>
+          <span>{{ section.settings.collection_sidebar_sale_title }}</span>
           {% include 'icon' with 'angle-down' %}
         </span>
         <div class="category-filters-area-list onsale-list-container {% if visible_filters %} active {% endif %} {% if settings.align_height %} use_align_height {% else %} use_image_height {% endif %}">
           
           {% assign max_height = 140 %}
-          {% for product in collections[section.settings.sidebar_collection_sale_collection].products limit:section.settings.sidebar_collection_product_count %}
+          {% for product in collections[section.settings.sidebar_collection_sale_collection].products limit: section.settings.sidebar_collection_product_count %}
 
           {% include 'product-card-item', list: false, max_height: max_height, product: product, show_vendor: show_vendor, products_per_row: 1 %}
 

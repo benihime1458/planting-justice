@@ -213,6 +213,7 @@
                 </div>
               </div>
               {% endif %}
+              {% if template.name != 'collection'%}
               <form class="search-form search-bar__form" action="{{ routes.search_url }}" method="get" role="search">
                 <div class="search-form__input-wrapper">
       <label for="predictive-search-drawer-input" class="visually-hidden"></label>
@@ -321,7 +322,7 @@
                 </button>
                 </div>
               </form>
-
+              {%endif%}
 
             </div>
           </div>
@@ -657,7 +658,7 @@
 
         {% comment %} Move Cart Button {% endcomment %}
 <div style="display: flex;">
-  <button  class="btn btn--primary" name="commit">
+  <button  class="btn btn--primary donate" name="commit">
     <a style="color: white;" target="_" href="https://plantingjustice.net/">
       <span>Donate</span>
     </a>

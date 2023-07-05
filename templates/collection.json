@@ -4,8 +4,8 @@
       "type": "collection-template",
       "settings": {
         "default_view_layout": "grid",
-        "collection_image_mode": "banner",
-        "show_breadcrumbs": true,
+        "collection_image_mode": "hide",
+        "show_breadcrumbs": false,
         "image_overlay_color": "#000000",
         "image_overlay_opacity": 40,
         "grid": 3,
