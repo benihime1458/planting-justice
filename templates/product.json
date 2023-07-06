@@ -13,18 +13,26 @@
           "settings": {
           }
         },
+        "220d69e9-8c2a-43b9-9363-ffbe33aba185": {
+          "type": "product_price",
+          "settings": {
+          }
+        },
+        "d25a0285-4fb4-422d-b95b-ab67446120ad": {
+          "type": "product_description",
+          "settings": {
+            "desc_display": "default"
+          }
+        },
         "59b9a8d1-5bd8-4ed8-92e9-5854a801f774": {
           "type": "rating",
+          "disabled": true,
           "settings": {
           }
         },
         "0471109f-c130-454e-a9ba-c56412cc11f3": {
           "type": "product_vendor",
-          "settings": {
-          }
-        },
-        "220d69e9-8c2a-43b9-9363-ffbe33aba185": {
-          "type": "product_price",
+          "disabled": true,
           "settings": {
           }
         },
@@ -48,35 +56,30 @@
         },
         "a6857d85-dbb6-41d1-9501-c01cf5bbe11f": {
           "type": "back_in_stock",
+          "disabled": true,
           "settings": {
-          }
-        },
-        "d25a0285-4fb4-422d-b95b-ab67446120ad": {
-          "type": "product_description",
-          "settings": {
-            "desc_display": "default"
           }
         }
       },
       "block_order": [
         "11795adc-1afa-4833-a193-258f495901ef",
         "75a9b1b6-630e-4615-99ce-f30bbec6ea5e",
+        "220d69e9-8c2a-43b9-9363-ffbe33aba185",
+        "d25a0285-4fb4-422d-b95b-ab67446120ad",
         "59b9a8d1-5bd8-4ed8-92e9-5854a801f774",
         "0471109f-c130-454e-a9ba-c56412cc11f3",
-        "220d69e9-8c2a-43b9-9363-ffbe33aba185",
         "b3ed0838-9ce6-4da4-a82b-0e9de5caa879",
         "0ddb7349-1bf6-4352-af41-583159a4e2fe",
         "8e2ecb36-9fd8-4b5d-8561-c11f4d549609",
-        "a6857d85-dbb6-41d1-9501-c01cf5bbe11f",
-        "d25a0285-4fb4-422d-b95b-ab67446120ad"
+        "a6857d85-dbb6-41d1-9501-c01cf5bbe11f"
       ],
       "custom_css": [
         "* {border-radius: 10px;}",
-        "\/* Shop Pay Btn *\/.shopify-cleanslate > div {min-height: 48px !important; background-color: #5b005c !important;}",
+        " \/* Shop Pay Btn *\/.shopify-cleanslate > div {min-height: 48px !important; background-color: #5b005c !important;}",
         ".breadcrumbs__link {color: #222222;}"
       ],
       "settings": {
-        "show_breadcrumbs": true,
+        "show_breadcrumbs": false,
         "show_pick_an_option": false,
         "enable_linked_options": false,
         "enabled_mobile_sticky_btns": true,
