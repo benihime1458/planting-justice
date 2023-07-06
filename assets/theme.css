@@ -8913,7 +8913,7 @@ margin-left: 5px;
   #default-cart-btn::after, #default-cart-btn,
   a,
   a::after {
-    background: transparent;
+    background: white;
     border: none;
     border-radius: 50%;
   }
