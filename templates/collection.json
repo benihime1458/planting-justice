@@ -23,7 +23,7 @@
         "sidebar_collection_sale_collection": "",
         "collection_sidebar_sale_title": "On Sale",
         "sidebar_collection_product_count": 4,
-        "pagination_mode": "standart"
+        "pagination_mode": "scroll"
       }
     }
   },
