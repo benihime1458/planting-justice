@@ -29,12 +29,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-        ".site-header__icons-wrapper #default-cart-btn {display: none;}",
-        "#default-cart-btn {background: #5b005c; border: none;}",
-        "#default-cart-btn:hover {background-color: #a700a9;}",
-        "#default-cart-btn:hover::after {background: #a700a9; width: 100%; height: 100%; top: 0; left: 0;}",
-        "@media screen and (max-width: 1199px) {#default-cart-btn {background: transparent; }}",
-        "@media screen and (max-width: 750px) {.site-header__icons-wrapper #default-cart-btn {display: block; } #default-cart-btn::after, a, a::after {border: none; border-radius: 50%; }}"
+
       ],
       "settings": {
         "align_logo": "inline",
