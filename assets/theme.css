@@ -8911,8 +8911,8 @@ margin-left: 5px;
     display: block;
   }
   #default-cart-btn::after, #default-cart-btn,
-  a,
-  a::after {
+  #default-cart-btn a,
+  #default-cart-btn a::after {
     background: white;
     border: none;
     border-radius: 50%;
