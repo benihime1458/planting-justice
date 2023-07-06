@@ -74,25 +74,27 @@
 
 
 {% capture header_cart_icon %}
-<div id="default-cart-btn" class='header_cart_info  btn btn--primary {% if show_cart_subtotal %}show_cart_subtotal{% endif %}'     id="HeaderCart" data-link-type="{{ settings.cart_type }}" data-cart-count-bubble>
-  {% if show_cart_subtotal %}
-  <span class='cart_total_info'>
-    <span class='cart_total_label'> {{ 'sections.header.total' | t }}</span>
-    <span class='cart_total_price h6'>
-      {% if settings.currency_code_enable %}
-      {{ cart.total_price | money_with_currency }}
-      {% else %}
-      {{ cart.total_price | money }}
-      {% endif %}
+<a href='{{ routes.cart_url }}'>
+  <div id="default-cart-btn" class='header_cart_info  btn btn--primary {% if show_cart_subtotal %}show_cart_subtotal{% endif %}'     id="HeaderCart" data-link-type="{{ settings.cart_type }}" data-cart-count-bubble>
+    {% if show_cart_subtotal %}
+    <span class='cart_total_info'>
+      <span class='cart_total_label'> {{ 'sections.header.total' | t }}</span>
+      <span class='cart_total_price h6'>
+        {% if settings.currency_code_enable %}
+        {{ cart.total_price | money_with_currency }}
+        {% else %}
+        {{ cart.total_price | money }}
+        {% endif %}
+      </span>
     </span>
-  </span>
-  {% endif %}
-  
-  <a href='{{ routes.cart_url }}' class='cart_icon btn btn--primary' >
-    {%- render 'icon', icon: cart_icon_style -%}
-    <span class='header_cart_count {% if cart.item_count == 0 %} shide{% endif %}' data-cart-count>{{ cart.item_count }}</span>
-  </a>
-</div>
+    {% endif %}
+    
+    <a href='{{ routes.cart_url }}' class='cart_icon btn btn--primary' >
+      {%- render 'icon', icon: cart_icon_style -%}
+      <span class='header_cart_count {% if cart.item_count == 0 %} shide{% endif %}' data-cart-count>{{ cart.item_count }}</span>
+    </a>
+  </div>
+</a>
 {% endcapture %}
 
 {% capture logo_element %}
