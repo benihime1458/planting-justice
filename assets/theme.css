@@ -8919,8 +8919,8 @@ margin-left: 5px;
   }
 }
 
-/* Product and Collection Cards, Cart Elements */
-.product-card, .collection-grid-item, .Cart_ContentSide, .Cart_SidebarSide {
+/* Product and Collection Cards, Cart Elements, Header Nav Dropdown */
+.product-card, .collection-grid-item, .Cart_ContentSide, .Cart_SidebarSide, .nav-dropdown {
   /* box-shadow: rgba(0,0,0,0.075) 1px 2px 5px 0; */
   filter: drop-shadow(1px 2px 5px rgba(0,0,0,0.14));
 }
