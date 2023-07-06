@@ -8877,3 +8877,51 @@ margin-left: 5px;
 .search-ajax .search_popular_searches_menu {
   display:block;
 }
+
+/* CUSTOM CSS */
+
+/* Header */
+.site-header__icons-wrapper #default-cart-btn {
+  display: none;
+}
+#default-cart-btn {
+  background: #5b005c;
+  border: none;
+}
+#default-cart-btn:hover {
+  background: #a700a9;
+}
+#default-cart-btn:hover::after {
+  background: #a700a9;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 1199px) {
+  #default-cart-btn, #default-cart-btn:hover, #default-cart-btn:hover::after {
+    background: white;
+  }
+}
+@media screen and (max-width: 750px) {
+  #default-cart-btn {
+    display: none;
+  }
+  .site-header__icons-wrapper #default-cart-btn {
+    display: block;
+  }
+  #default-cart-btn::after, #default-cart-btn,
+  a,
+  a::after {
+    background: transparent;
+    border: none;
+    border-radius: 50%;
+  }
+}
+
+
+/* Product and Collection Cards */
+.product-card, .collection-grid-item, .Cart_ContentSide, .Cart_SidebarSide {
+  /* box-shadow: rgba(0,0,0,0.075) 1px 2px 5px 0; */
+  filter: drop-shadow(1px 2px 5px rgba(0,0,0,0.14));
+}
