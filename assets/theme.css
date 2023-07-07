@@ -9008,6 +9008,10 @@ margin-left: 5px;
 }
 
 @media screen and (max-width: 749px) {
+  .icon-with-text--blocks {
+    flex-wrap: wrap;
+  }
+
   .icon-with-text--blocks .icon-with-text--block {
     padding-left: 0;
   }
