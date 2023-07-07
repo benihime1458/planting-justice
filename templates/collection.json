@@ -3,7 +3,9 @@
     "362adf0c-de2b-4099-b78a-df10d75c93ba": {
       "type": "rich-text",
       "custom_css": [
-
+        "h2,p {text-align: left;}",
+        "#section-template--19114458808620__362adf0c-de2b-4099-b78a-df10d75c93ba > div > div {max-width: 1660px;}",
+        ".rich-text-wrapper {margin: 0; max-width: 750px !important;}"
       ],
       "settings": {
         "content_width": "100",
