@@ -122,10 +122,25 @@
         "subtitle": "",
         "html": "<div class=\"custom-footer\">\n        <div class=\"site-footer__item\n                    \n                    site-footer__item--one-third\n                    \">\n          <div class=\"site-footer__item-inner site-footer__item-inner--text\">\n<p class=\"h5\">Visit Us 📍<\/p>\n<div class=\"site-footer__rte\n                        \">\n              <p><a href=\"https:\/\/www.google.com\/maps\/dir\/\/319%20105th%20Ave%20Oakland,%20CA%2094603\" target=\"_blank\" aria-describedby=\"a11y-new-window-external-message\" rel=\"null noopener\"><span style=\"text-decoration:underline\">319 105th Ave<br>Oakland, CA 94603<br><br><\/span><\/a>Mon-Fri: 8:30 am – 4:00 pm<br>Sat: 10am – 4pm<\/p>\n            <\/div>\n<\/div>\n        <\/div>\n        \n\n        <div class=\"site-footer__item\n                    \n                    site-footer__item--one-third\n                    \">\n          <div class=\"site-footer__item-inner site-footer__item-inner--text\">\n<p class=\"h5\">Call Us 📞<\/p>\n<div class=\"site-footer__rte\n                        \">\n              <p>(<a href=\"tel:5107566965\" aria-describedby=\"a11y-external-message\"><span style=\"text-decoration:underline\">510) - 756 - 6965<\/span><\/a><\/p>\n<h5>Having trouble with our website?<\/h5>\n<p><a href=\"https:\/\/plantingjustice.org\/website-request\/\" aria-describedby=\"a11y-external-message\">Submit your issue here<\/a><\/p>\n            <\/div>\n<\/div>\n        <\/div>\n        \n\n        <div class=\"site-footer__item\n                    \n                    site-footer__item--one-third\n                    \">\n          <div class=\"site-footer__item-inner site-footer__item-inner--text\">\n<p class=\"h5\">Donate 🪴<\/p>\n<div class=\"site-footer__rte\n                        \">\n<button class=\"btn btn--primary donate\" name=\"commit\">\n    <a target=\"_\" href=\"https:\/\/plantingjustice.net\/\">\n      <span>Donate Now<\/span>\n    \n  <\/a><\/button>\n              <p>Planting Justice is a 501(c)3 non-profit organization<strong> <\/strong>with an EIN of 27-0334905. 100% of donations are tax-exempt.<\/p>\n            <\/div>\n<\/div>\n        <\/div>\n        \n<\/div>"
       }
+    },
+    "18a918df-ca4f-45e6-a2fc-22e111ce298f": {
+      "type": "rich-text",
+      "settings": {
+        "content_width": "100",
+        "bg_color": "",
+        "section_color": "",
+        "rte_icon": "shopify:\/\/shop_images\/USDA-Organic-Certifed.png",
+        "rte_icon_width": 100,
+        "section_title": "",
+        "subtitle": "",
+        "text": "<p>©2023-24 Planting Justice. A 501(c)3. All Rights Reserved.<\/p>",
+        "text_size": "medium"
+      }
     }
   },
   "order": [
     "footer",
-    "9e74e738-611a-48fa-a64b-2ce9c88b24df"
+    "9e74e738-611a-48fa-a64b-2ce9c88b24df",
+    "18a918df-ca4f-45e6-a2fc-22e111ce298f"
   ]
 }
