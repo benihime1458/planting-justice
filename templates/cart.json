@@ -70,6 +70,7 @@
     },
     "54679a0a-fe33-47ed-b347-81165c28a626": {
       "type": "quotes",
+      "disabled": true,
       "blocks": {
         "template--19114458906924__54679a0a-fe33-47ed-b347-81165c28a626-1688709965e68c6f92-0": {
           "type": "quote",
