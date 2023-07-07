@@ -67,11 +67,59 @@
         "show_shipping_estimator": false,
         "shipping_estimator_default_country": "United States"
       }
+    },
+    "54679a0a-fe33-47ed-b347-81165c28a626": {
+      "type": "quotes",
+      "blocks": {
+        "template--19114458906924__54679a0a-fe33-47ed-b347-81165c28a626-1688709965e68c6f92-0": {
+          "type": "quote",
+          "settings": {
+            "title": "19,000+ Customers",
+            "quote": "<p>We have been in business since 2015 and are grateful to have served so many customers.<\/p>",
+            "author": "",
+            "image": "shopify:\/\/shop_images\/customer-icon.svg"
+          }
+        },
+        "template--19114458906924__54679a0a-fe33-47ed-b347-81165c28a626-1688709965e68c6f92-1": {
+          "type": "quote",
+          "settings": {
+            "title": "Fastest Shipping",
+            "quote": "<p>All of our shipments are handled by UPS. We do our best to get your plants to you in the shortest time possible.<\/p>",
+            "author": "",
+            "image": "shopify:\/\/shop_images\/shipping-icon.svg"
+          }
+        },
+        "template--19114458906924__54679a0a-fe33-47ed-b347-81165c28a626-1688709965e68c6f92-2": {
+          "type": "quote",
+          "settings": {
+            "title": "We're Nonprofit",
+            "quote": "<p>We proudly serve local California communities and formerly incarcerated citizens. Your purchase directly funds our work, and we are grateful for it!<\/p>",
+            "author": "",
+            "image": "shopify:\/\/shop_images\/nonprofit-icon.svg"
+          }
+        }
+      },
+      "block_order": [
+        "template--19114458906924__54679a0a-fe33-47ed-b347-81165c28a626-1688709965e68c6f92-0",
+        "template--19114458906924__54679a0a-fe33-47ed-b347-81165c28a626-1688709965e68c6f92-1",
+        "template--19114458906924__54679a0a-fe33-47ed-b347-81165c28a626-1688709965e68c6f92-2"
+      ],
+      "settings": {
+        "image_style": "full",
+        "title": "Testimonials",
+        "subtitle": "Subtitle",
+        "title_color": "#000",
+        "show_dots": false,
+        "show_arrows": false,
+        "enable_autoplay": false,
+        "cycle_speed": 8
+      }
     }
   },
   "order": [
     "b1d6a60b-5645-4739-b37f-13fffb567d6b",
     "2ab80a07-fd26-44bb-b807-03c7e30028d0",
-    "main"
+    "main",
+    "54679a0a-fe33-47ed-b347-81165c28a626"
   ]
 }
