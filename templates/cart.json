@@ -13,6 +13,50 @@
         "text_size": "medium"
       }
     },
+    "2ab80a07-fd26-44bb-b807-03c7e30028d0": {
+      "type": "index-icons-with-text",
+      "blocks": {
+        "template--19114458906924__2ab80a07-fd26-44bb-b807-03c7e30028d0-168870928022129fce-0": {
+          "type": "block",
+          "settings": {
+            "custom_icon": "star",
+            "image": "shopify:\/\/shop_images\/customer-icon.svg",
+            "title": "19,000+ Customers",
+            "content": "<p>We have been in business since 2015 and are grateful to have served so many customers.<\/p>",
+            "link": ""
+          }
+        },
+        "template--19114458906924__2ab80a07-fd26-44bb-b807-03c7e30028d0-168870928022129fce-1": {
+          "type": "block",
+          "settings": {
+            "custom_icon": "star",
+            "image": "shopify:\/\/shop_images\/shipping-icon.svg",
+            "title": "Fastest Shipping",
+            "content": "<p>All of our shipments are handled by UPS. We do our best to get your plants to you in the shortest time possible.<\/p>",
+            "link": ""
+          }
+        },
+        "template--19114458906924__2ab80a07-fd26-44bb-b807-03c7e30028d0-168870928022129fce-2": {
+          "type": "block",
+          "settings": {
+            "custom_icon": "star",
+            "title": "We're Nonprofit",
+            "content": "<p>We proudly serve local California communities and formerly incarcerated citizens. Your purchase directly funds our work, and we are grateful for it!<\/p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--19114458906924__2ab80a07-fd26-44bb-b807-03c7e30028d0-168870928022129fce-0",
+        "template--19114458906924__2ab80a07-fd26-44bb-b807-03c7e30028d0-168870928022129fce-1",
+        "template--19114458906924__2ab80a07-fd26-44bb-b807-03c7e30028d0-168870928022129fce-2"
+      ],
+      "settings": {
+        "title": "Heading",
+        "subtitle": "SubHeading",
+        "icon_color": ""
+      }
+    },
     "main": {
       "type": "cart-template",
       "settings": {
@@ -26,6 +70,7 @@
   },
   "order": [
     "b1d6a60b-5645-4739-b37f-13fffb567d6b",
+    "2ab80a07-fd26-44bb-b807-03c7e30028d0",
     "main"
   ]
 }
