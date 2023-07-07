@@ -40,6 +40,7 @@
           "type": "block",
           "settings": {
             "custom_icon": "star",
+            "image": "shopify:\/\/shop_images\/nonprofit-icon.svg",
             "title": "We're Nonprofit",
             "content": "<p>We proudly serve local California communities and formerly incarcerated citizens. Your purchase directly funds our work, and we are grateful for it!<\/p>",
             "link": ""
@@ -53,8 +54,8 @@
       ],
       "settings": {
         "title": "Heading",
-        "subtitle": "SubHeading",
-        "icon_color": ""
+        "subtitle": "",
+        "icon_color": "#000000"
       }
     },
     "main": {
