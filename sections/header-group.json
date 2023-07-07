@@ -29,7 +29,7 @@
     "header": {
       "type": "header",
       "custom_css": [
-
+        ".header_top {padding: 5px 0;}"
       ],
       "settings": {
         "align_logo": "inline",
