@@ -3,8 +3,6 @@
     "main": {
       "type": "list-collections-template",
       "custom_css": [
-        ".list-collections-grid {justify-content: space-evenly; gap: 1em;}",
-        ".grid__item {max-width: 500px;}",
         ".collection-grid-item {padding: 0;}",
         ".collection-grid-item__image-wrapper img {max-width: 100% !important; object-fit: cover; border-radius: 20px 20px 0 0; height: 100%;}",
         ".collections-grid-item__info {padding: 30px;}",
