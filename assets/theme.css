@@ -8881,7 +8881,7 @@ margin-left: 5px;
 /* CUSTOM CSS */
 
 /* Header */
-.site-header .siteheader__logo {
+.logo_element-wrapper .siteheader__logo {
   display: none;
 }
 
