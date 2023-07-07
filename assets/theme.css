@@ -8920,6 +8920,10 @@ body:not(.template-index) .shopify-section+.shopify-section {
   }
 }
 @media screen and (max-width: 750px) {
+  .logo_element-wrapper {
+    display: block !important;
+  }
+
   #default-cart-btn {
     display: none;
   }
