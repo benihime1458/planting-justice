@@ -8881,6 +8881,14 @@ margin-left: 5px;
 /* CUSTOM CSS */
 
 /* Header */
+.site-header .siteheader__logo {
+  display: none;
+}
+
+.site-header__logo {
+  max-width: 175px;
+}
+
 .site-header__icons-wrapper #default-cart-btn {
   display: none;
 }
