@@ -109,7 +109,13 @@
     "9e74e738-611a-48fa-a64b-2ce9c88b24df": {
       "type": "index-custom-section",
       "custom_css": [
-
+        ".custom-footer {display: grid; grid-template-columns: repeat(3, 250px); justify-content: center;}",
+        ".custom-footer > div {max-width: 250px;}",
+        "@media screen and (max-width: 750px) {.custom-footer {grid-template-columns: repeat(2, 1fr); }}",
+        "@media screen and (max-width: 500px) {.custom-footer {grid-template-columns: 1fr; }}",
+        ".donate {width: 100%; justify-content: center; margin-bottom: 1rem;}",
+        ".donate span {color: white;}",
+        "#copyright-footer {margin-top: 1em; display: flex; align-items: center; justify-content: center; gap: 1em;}"
       ],
       "settings": {
         "section_width": "page-width",

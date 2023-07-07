@@ -8965,6 +8965,13 @@ margin-left: 5px;
   justify-content: center;
   gap: 1em;
 }
+
+@media screen and (max-width: 750px) {
+  #copyright-footer {
+    flex-direction: column;
+  }
+}
+
 .copyright-icons {
   display: flex;
   gap: 1em;
