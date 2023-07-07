@@ -8985,6 +8985,10 @@ body:not(.template-index) .shopify-section+.shopify-section {
   justify-content: center;
   gap: 1em;
 }
+#copyright-icons {
+  display: flex;
+  gap: 1em;
+}
 
 @media screen and (max-width: 750px) {
   #copyright-footer {
@@ -8992,9 +8996,9 @@ body:not(.template-index) .shopify-section+.shopify-section {
   }
 }
 
-#copyright-icons {
-  display: flex;
-  gap: 1em;
+/* Bottom of Custom Footer */
+#section-sections--19114458382636__9e74e738-611a-48fa-a64b-2ce9c88b24df {
+  padding-bottom: 55px;
 }
 
 /* Why Choose Planting Justice? */
