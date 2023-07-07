@@ -12,9 +12,9 @@
         "bg_color": "",
         "section_color": "",
         "rte_icon_width": 100,
-        "section_title": "SHIPPING TIME",
+        "section_title": "Shipping Time",
         "subtitle": "",
-        "text": "<p><strong>At this time of year orders take around 4 weeks to ship out after they are placed. When your order ships out from the nursery, you will receive an email with your tracking information from UPS.<\/strong><\/p><p><strong>We ship our plants all year, so if you would like your order to be shipped at a different time of year please let us know the month you would like your order to ship out in the ‘Order Notes’ section at the end of the checkout process.<\/strong><\/p>",
+        "text": "<p>At this time of year orders take around 4 weeks to ship out after they are placed. When your order ships out from the nursery, you will receive an email with your tracking information from UPS.<\/p><p>We ship our plants all year, so if you would like your order to be shipped at a different time of year please let us know the month you would like your order to ship out in the ‘Order Notes’ section at the end of the checkout process.<\/p>",
         "text_size": "medium"
       }
     },
