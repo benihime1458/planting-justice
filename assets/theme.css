@@ -9000,3 +9000,9 @@ margin-left: 5px;
 .block_info {
   text-align: center;
 }
+
+@media screen and (min-width: 750px) and (max-width: 1199px) {
+  .icon-with-text--block .block_icon .icon, .icon-with-text--block .block_icon img {
+      max-width: 100%;
+  }
+}
