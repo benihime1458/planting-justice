@@ -8979,7 +8979,7 @@ margin-left: 5px;
 
 /* Why Choose Planting Justice? */
 .section-header > h2 {
-  font-size: calc(((var(--font-h4-mobile)) / (var(--font-size-base))) * 1em);
+  font-size: 1em;
 }
 
 .icon-with-text--blocks {
