@@ -8949,7 +8949,7 @@ margin-left: 5px;
     grid-template-columns: 1fr;
   }
 }
-.donate {
+.site-footer__item .donate {
   width: 100%;
   justify-content: center;
   margin-bottom: 1rem;
