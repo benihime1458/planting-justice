@@ -9006,3 +9006,10 @@ margin-left: 5px;
       max-width: 100%;
   }
 }
+
+@media screen and (max-width: 749px) {
+  .icon-with-text--blocks .icon-with-text--block {
+    padding-left: 0;
+  }
+
+}
