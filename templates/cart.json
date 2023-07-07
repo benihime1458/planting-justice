@@ -5,7 +5,7 @@
       "custom_css": [
         "h2,p {text-align: left;}",
         "#section-template--19114458906924__b1d6a60b-5645-4739-b37f-13fffb567d6b > div > div {max-width: 1660px;}",
-        ".rich-text-wrapper {margin: auto; max-width: 750px;}"
+        ".rich-text-wrapper {margin: auto; max-width: 750px !important;}"
       ],
       "settings": {
         "content_width": "100",
