@@ -8977,6 +8977,11 @@ margin-left: 5px;
   gap: 1em;
 }
 
+/* Why Choose Planting Justice? */
+.section-header > h2 {
+  font-size: calc(((var(--font-h4-mobile)) / (var(--font-size-base))) * 1em);
+}
+
 .icon-with-text--blocks {
   justify-content: center;
   flex-wrap: nowrap;
@@ -9002,6 +9007,10 @@ margin-left: 5px;
 }
 
 @media screen and (min-width: 750px) and (max-width: 1199px) {
+  .block_icon {
+    margin-right: 0;
+  }
+
   .icon-with-text--block .block_icon .icon, .icon-with-text--block .block_icon img {
       max-width: 100%;
   }
