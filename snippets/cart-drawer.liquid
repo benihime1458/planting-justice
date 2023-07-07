@@ -28,7 +28,7 @@
       {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
       <div class="Cart__ShippingNotice cart-drawer-container">
         <div class="Drawer__Container">
-
+          
           {% comment %} {%- if cart.total_price >= threshold_in_cents -%}
           <p style="color: {{ settings.free_shipping_reached_color }}">{{- 'cart.general.free_shipping' | t -}}</p>
           {%- else -%}
@@ -41,7 +41,10 @@
           </span>{%- endcapture -%}
           <p style="color: {{ settings.free_shipping_not_reached_color }}">{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
           {%- endif -%} {% endcomment %}
+          <h5>SHIPPING TIME</h5>
+          <p>At this time of year orders take around 4 weeks to ship out after they are placed. When your order ships out from the nursery, you will receive an email with your tracking information from UPS..
 
+          We ship our plants all year, so if you would like your order to be shipped at a different time of year please let us know the month you would like your order to ship out in the ‘Order Notes’ section at the end of the checkout process.</p>
         </div>
       </div>
       
