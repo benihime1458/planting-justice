@@ -8946,7 +8946,7 @@ body:not(.template-index) .shopify-section+.shopify-section {
 
 /* Product Filters */
 
-.category-filters-area-section:nth-of-type(3) .collection-sidebar .category-filters-area-list {
+.category-filters-area-section:nth-of-type(3) .collection-sidebar.category-filters-area-list {
   overflow: visible;
 }
 
