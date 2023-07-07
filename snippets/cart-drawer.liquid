@@ -29,7 +29,7 @@
       <div class="Cart__ShippingNotice cart-drawer-container">
         <div class="Drawer__Container">
 
-          {%- if cart.total_price >= threshold_in_cents -%}
+          {% comment %} {%- if cart.total_price >= threshold_in_cents -%}
           <p style="color: {{ settings.free_shipping_reached_color }}">{{- 'cart.general.free_shipping' | t -}}</p>
           {%- else -%}
           {%- capture remaining_amount -%}<span>
@@ -40,7 +40,7 @@
           {% endif %}          
           </span>{%- endcapture -%}
           <p style="color: {{ settings.free_shipping_not_reached_color }}">{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
-          {%- endif -%}
+          {%- endif -%} {% endcomment %}
 
         </div>
       </div>
@@ -95,10 +95,10 @@
       
       {% if cart_related_collection_handle != blank %}
       {% if always_show_cart_related_collection %}
-      {% render 'card-related-products', cart:cart, cart_related_collection_handle: cart_related_collection_handle %}
+      {% render 'card-related-products', cart: cart, cart_related_collection_handle: cart_related_collection_handle %}
       {% else %}
       {% if cart.item_count == 0 %}
-      {% render 'card-related-products', cart:cart, cart_related_collection_handle: cart_related_collection_handle %}
+      {% render 'card-related-products', cart: cart, cart_related_collection_handle: cart_related_collection_handle %}
       {% endif %}
       {% endif %}
       {% endif %}
