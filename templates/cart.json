@@ -3,10 +3,10 @@
     "b1d6a60b-5645-4739-b37f-13fffb567d6b": {
       "type": "rich-text",
       "custom_css": [
-        "h2, p {text-align: left;}"
+        "h2,p {text-align: left;}"
       ],
       "settings": {
-        "content_width": "75",
+        "content_width": "50",
         "bg_color": "",
         "section_color": "",
         "rte_icon_width": 100,
