@@ -8950,6 +8950,10 @@ body:not(.template-index) .shopify-section+.shopify-section {
   overflow: visible;
 }
 
+.category-filters-area-section:nth-of-type(3) a {
+  display: none !important;
+}
+
 .product-card, .collection-grid-item, .Cart_ContentSide, .Cart_SidebarSide, .nav-dropdown {
   filter: drop-shadow(1px 2px 5px rgba(0,0,0,0.14));
 }
