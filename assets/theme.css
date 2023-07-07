@@ -8972,7 +8972,7 @@ margin-left: 5px;
   }
 }
 
-.copyright-icons {
+#copyright-icons {
   display: flex;
   gap: 1em;
 }
