@@ -8940,6 +8940,10 @@ body:not(.template-index) .shopify-section+.shopify-section {
 }
 
 /* Product and Collection Cards, Cart Elements, Header Nav Dropdown */
+.back_in_stock_row {
+  display: none;
+}
+
 .product-card, .collection-grid-item, .Cart_ContentSide, .Cart_SidebarSide, .nav-dropdown {
   filter: drop-shadow(1px 2px 5px rgba(0,0,0,0.14));
 }
