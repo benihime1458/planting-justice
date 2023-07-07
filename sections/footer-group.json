@@ -125,11 +125,13 @@
     },
     "18a918df-ca4f-45e6-a2fc-22e111ce298f": {
       "type": "rich-text",
+      "custom_css": [
+
+      ],
       "settings": {
         "content_width": "100",
         "bg_color": "",
         "section_color": "",
-        "rte_icon": "shopify:\/\/shop_images\/USDA-Organic-Certifed.png",
         "rte_icon_width": 100,
         "section_title": "",
         "subtitle": "",
