@@ -41,6 +41,8 @@
           </span>{%- endcapture -%}
           <p style="color: {{ settings.free_shipping_not_reached_color }}">{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
           {%- endif -%} {% endcomment %}
+
+          {% comment %} Custom Shipping Time text {% endcomment %}
           <h5>SHIPPING TIME</h5>
           <p>At this time of year orders take around 4 weeks to ship out after they are placed. When your order ships out from the nursery, you will receive an email with your tracking information from UPS.
 
@@ -174,3 +176,13 @@
  
   </form>
 </div>
+
+<style>
+  .Drawer__Container h5, p {
+    text-align: left;
+  }
+
+  .Drawer__Container p {
+    font-size: 14px;
+  }
+</style>
