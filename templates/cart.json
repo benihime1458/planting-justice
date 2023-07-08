@@ -67,6 +67,9 @@
         "template--19114458906924__2ab80a07-fd26-44bb-b807-03c7e30028d0-168870928022129fce-1",
         "template--19114458906924__2ab80a07-fd26-44bb-b807-03c7e30028d0-168870928022129fce-2"
       ],
+      "custom_css": [
+        "#section-template--19114458906924__2ab80a07-fd26-44bb-b807-03c7e30028d0 {padding-top: 50px;}"
+      ],
       "settings": {
         "title": "Why Choose Planting Justice?",
         "subtitle": "",
