@@ -26,7 +26,7 @@
         "1657285966fbda115a-0"
       ],
       "custom_css": [
-        ".slideshow {height: 1000px; }"
+        ".slideshow {height: 1000px;}"
       ],
       "settings": {
         "slideshow_width": "full",
@@ -114,6 +114,7 @@
     },
     "16572860256a3e457c": {
       "type": "index-icons-with-text",
+      "disabled": true,
       "blocks": {
         "16572860240fe40332-0": {
           "type": "block",
@@ -206,6 +207,7 @@
     },
     "1657286065cf1878aa": {
       "type": "quotes",
+      "disabled": true,
       "blocks": {
         "165728606571ec63d1-2": {
           "type": "quote",
@@ -305,6 +307,7 @@
     },
     "165728608371b84ad5": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "title": "Latest Stories and News",
         "subtitle": "",
@@ -325,6 +328,7 @@
     },
     "1657286107baf17a73": {
       "type": "newsletter",
+      "disabled": true,
       "settings": {
         "section_bg_color": "",
         "section_color": "",
