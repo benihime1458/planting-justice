@@ -91,6 +91,7 @@
     "customer_image_overlay_color": "#000",
     "show_customer_breadcrumbs": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/Plantin_Justice-Logo-Current-2022_3438b7c9-341a-4ea6-a5d1-7ab449993cf6.png",
+    "checkout_logo_position": "center",
     "checkout_accent_color": "#5b005c",
     "checkout_button_color": "#8bbf63",
     "blog_show_author": true,
